@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>المدونة | شركة حلول وتميز لخدمات التنظيف</title>
+<meta name="description" content="مقالات ونصائح في التنظيف والصيانة المنزلية من خبراء شركة حلول وتميز لخدمات التنظيف في الرياض.">
+<link rel="canonical" href="https://helool-sa.com/blog/">
+<meta property="og:title" content="المدونة | شركة حلول وتميز لخدمات التنظيف">
+<meta property="og:url" content="https://helool-sa.com/blog/">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--lime:#c8e01a;--lime-dark:#a8bc10;--red:#ff2e0a;--purple:#780165;--dark:#0e0e0e;--dark2:#161616;--dark3:#1e1e1e;--dark4:#252525;--text:#f0f0f0;--text-muted:#999;--text-dim:#666;--white:#ffffff;--radius:16px;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Cairo',sans-serif;background:var(--dark);color:var(--text);direction:rtl;line-height:1.7;overflow-x:hidden;}
+a{text-decoration:none;color:inherit;}
+img{max-width:100%;}
+
+/* HEADER */
+header{position:fixed;top:0;right:0;left:0;z-index:100;background:rgba(14,14,14,0.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(200,224,26,0.12);padding:0 5%;height:72px;display:flex;align-items:center;justify-content:space-between;}
+.logo-wrap img{height:48px;width:auto;}
+nav{display:flex;align-items:center;gap:32px;}
+nav a{font-size:15px;font-weight:500;color:var(--text-muted);transition:color 0.2s;position:relative;}
+nav a::after{content:'';position:absolute;bottom:-4px;right:0;width:0;height:2px;background:var(--lime);transition:width 0.2s;}
+nav a:hover{color:var(--white);}
+nav a:hover::after{width:100%;}
+nav a.active{color:var(--lime);}
+nav a.active::after{width:100%;}
+.cta-btn{background:var(--lime);color:var(--dark);font-family:'Cairo',sans-serif;font-size:14px;font-weight:700;padding:10px 24px;border-radius:50px;border:none;cursor:pointer;transition:background 0.2s,transform 0.15s;white-space:nowrap;}
+.cta-btn:hover{background:var(--lime-dark);transform:translateY(-1px);}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;}
+.hamburger span{width:24px;height:2px;background:var(--text);border-radius:2px;}
+.mobile-nav{display:none;position:fixed;top:72px;right:0;left:0;background:rgba(14,14,14,0.98);padding:24px 5%;flex-direction:column;gap:20px;border-bottom:1px solid rgba(200,224,26,0.12);z-index:99;}
+.mobile-nav a{font-size:17px;font-weight:500;color:var(--text-muted);padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06);}
+.mobile-nav.open{display:flex;}
+
+/* PAGE HERO */
+.page-hero{padding:140px 5% 80px;background:var(--dark2);border-bottom:1px solid rgba(255,255,255,0.06);position:relative;overflow:hidden;}
+.page-hero::before{content:'';position:absolute;top:-50%;left:50%;transform:translateX(-50%);width:800px;height:800px;background:radial-gradient(circle,rgba(200,224,26,0.05) 0%,transparent 65%);pointer-events:none;}
+.breadcrumb{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-dim);margin-bottom:20px;}
+.breadcrumb a{color:var(--text-dim);transition:color 0.2s;}
+.breadcrumb a:hover{color:var(--lime);}
+.breadcrumb span{color:var(--text-dim);}
+.section-label{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:0.15em;color:var(--lime);text-transform:uppercase;margin-bottom:16px;}
+.section-label::before{content:'';width:24px;height:2px;background:var(--lime);}
+.page-hero h1{font-size:clamp(36px,5vw,60px);font-weight:900;line-height:1.15;margin-bottom:16px;}
+.page-hero p{font-size:17px;color:var(--text-muted);max-width:520px;line-height:1.8;}
+
+/* FILTERS */
+.filters-bar{padding:32px 5%;background:var(--dark);border-bottom:1px solid rgba(255,255,255,0.06);display:flex;flex-wrap:wrap;gap:10px;align-items:center;}
+.filter-btn{background:transparent;border:1px solid rgba(255,255,255,0.1);color:var(--text-muted);font-family:'Cairo',sans-serif;font-size:13px;font-weight:600;padding:8px 20px;border-radius:50px;cursor:pointer;transition:all 0.2s;}
+.filter-btn:hover,.filter-btn.active{background:rgba(200,224,26,0.1);border-color:rgba(200,224,26,0.4);color:var(--lime);}
+.search-wrap{margin-right:auto;position:relative;}
+.search-wrap input{background:var(--dark2);border:1px solid rgba(255,255,255,0.1);color:var(--text);font-family:'Cairo',sans-serif;font-size:14px;padding:9px 20px 9px 44px;border-radius:50px;outline:none;width:240px;transition:border-color 0.2s;}
+.search-wrap input:focus{border-color:rgba(200,224,26,0.4);}
+.search-wrap input::placeholder{color:var(--text-dim);}
+.search-icon{position:absolute;left:16px;top:50%;transform:translateY(-50%);color:var(--text-dim);font-size:16px;}
+
+/* FEATURED POST */
+.featured-section{padding:64px 5% 0;}
+.featured-label{font-size:12px;font-weight:700;letter-spacing:0.12em;color:var(--lime);text-transform:uppercase;margin-bottom:20px;display:flex;align-items:center;gap:8px;}
+.featured-label::before{content:'';width:20px;height:2px;background:var(--lime);}
+.featured-card{display:grid;grid-template-columns:1.2fr 1fr;background:var(--dark2);border:1px solid rgba(255,255,255,0.08);border-radius:24px;overflow:hidden;transition:border-color 0.3s;}
+.featured-card:hover{border-color:rgba(200,224,26,0.25);}
+.featured-img{aspect-ratio:16/10;background:linear-gradient(135deg,#1a2010 0%,#2a3818 50%,#1a1a10 100%);display:flex;align-items:center;justify-content:center;font-size:80px;position:relative;}
+.featured-img::after{content:'';position:absolute;inset:0;background:linear-gradient(to left,var(--dark2) 0%,transparent 40%);}
+.featured-body{padding:48px 40px;display:flex;flex-direction:column;justify-content:center;}
+.post-cat{display:inline-block;background:rgba(200,224,26,0.1);border:1px solid rgba(200,224,26,0.2);color:var(--lime);font-size:11px;font-weight:700;padding:4px 14px;border-radius:50px;margin-bottom:20px;}
+.featured-body h2{font-size:clamp(22px,3vw,30px);font-weight:800;line-height:1.3;margin-bottom:16px;color:var(--white);}
+.featured-body p{font-size:15px;color:var(--text-muted);line-height:1.8;margin-bottom:28px;}
+.post-meta{display:flex;align-items:center;gap:20px;font-size:12px;color:var(--text-dim);margin-bottom:24px;}
+.post-meta span{display:flex;align-items:center;gap:5px;}
+.read-btn{display:inline-flex;align-items:center;gap:8px;background:var(--lime);color:var(--dark);font-family:'Cairo',sans-serif;font-size:14px;font-weight:700;padding:12px 28px;border-radius:50px;transition:all 0.2s;align-self:flex-start;}
+.read-btn:hover{background:var(--lime-dark);transform:translateY(-1px);}
+
+/* POSTS GRID */
+.posts-section{padding:64px 5% 100px;}
+.posts-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:24px;}
+.post-card{background:var(--dark2);border:1px solid rgba(255,255,255,0.06);border-radius:var(--radius);overflow:hidden;transition:border-color 0.3s,transform 0.3s;cursor:pointer;}
+.post-card:hover{border-color:rgba(200,224,26,0.25);transform:translateY(-4px);}
+.post-thumb{aspect-ratio:16/9;background:linear-gradient(135deg,#1a1a2a 0%,#2a1a20 50%,#1a2010 100%);display:flex;align-items:center;justify-content:center;font-size:52px;position:relative;overflow:hidden;}
+.post-thumb::after{content:'';position:absolute;bottom:0;left:0;right:0;height:60px;background:linear-gradient(to top,var(--dark2),transparent);}
+.post-body{padding:24px;}
+.post-body .post-cat{margin-bottom:12px;}
+.post-body h3{font-size:18px;font-weight:700;line-height:1.4;margin-bottom:10px;color:var(--white);transition:color 0.2s;}
+.post-card:hover .post-body h3{color:var(--lime);}
+.post-body p{font-size:13px;color:var(--text-muted);line-height:1.7;margin-bottom:20px;}
+.post-footer{display:flex;align-items:center;justify-content:space-between;}
+.post-footer .post-meta{gap:12px;}
+.post-link{font-size:13px;font-weight:600;color:var(--lime);display:flex;align-items:center;gap:4px;}
+
+/* NEWSLETTER */
+.newsletter{background:var(--dark3);border-top:1px solid rgba(255,255,255,0.06);border-bottom:1px solid rgba(255,255,255,0.06);padding:64px 5%;text-align:center;}
+.newsletter h3{font-size:28px;font-weight:800;margin-bottom:10px;}
+.newsletter p{font-size:15px;color:var(--text-muted);margin-bottom:32px;}
+.newsletter-form{display:flex;gap:12px;max-width:480px;margin:0 auto;flex-wrap:wrap;justify-content:center;}
+.newsletter-form input{flex:1;min-width:220px;background:var(--dark2);border:1px solid rgba(255,255,255,0.1);color:var(--text);font-family:'Cairo',sans-serif;font-size:14px;padding:12px 20px;border-radius:50px;outline:none;transition:border-color 0.2s;}
+.newsletter-form input:focus{border-color:rgba(200,224,26,0.4);}
+.newsletter-form input::placeholder{color:var(--text-dim);}
+.newsletter-form button{background:var(--lime);color:var(--dark);font-family:'Cairo',sans-serif;font-size:14px;font-weight:700;padding:12px 28px;border-radius:50px;border:none;cursor:pointer;transition:background 0.2s;}
+.newsletter-form button:hover{background:var(--lime-dark);}
+
+/* FOOTER */
+footer{background:#080808;border-top:1px solid rgba(255,255,255,0.06);padding:60px 5% 32px;}
+.footer-top{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:48px;margin-bottom:48px;}
+.footer-brand img{height:52px;margin-bottom:16px;}
+.footer-brand p{font-size:14px;color:var(--text-dim);line-height:1.8;max-width:260px;}
+.footer-col h5{font-size:14px;font-weight:700;margin-bottom:20px;color:var(--white);}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:10px;}
+.footer-col ul li a{font-size:14px;color:var(--text-dim);transition:color 0.2s;}
+.footer-col ul li a:hover{color:var(--lime);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.06);padding-top:28px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;font-size:13px;color:var(--text-dim);}
+
+/* WA FAB */
+.wa-fab{position:fixed;bottom:28px;left:28px;z-index:200;width:58px;height:58px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 24px rgba(37,211,102,0.4);transition:transform 0.2s;font-size:28px;}
+.wa-fab:hover{transform:scale(1.1);}
+.call-fab{position:fixed;bottom:100px;left:28px;z-index:200;width:58px;height:58px;background:#0e7eff;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 24px rgba(14,126,255,.4);transition:transform .2s;}
+.call-fab:hover{transform:scale(1.1);}
+
+@media(max-width:900px){
+  nav{display:none;}.cta-btn.desktop-only{display:none;}.hamburger{display:flex;}
+  .featured-card{grid-template-columns:1fr;}
+  .featured-img{aspect-ratio:16/8;}
+  .footer-top{grid-template-columns:1fr 1fr;}
+  .footer-brand{grid-column:1/-1;}
+  .search-wrap{margin-right:0;width:100%;}
+  .search-wrap input{width:100%;}
+}
+@media(max-width:600px){
+  .posts-grid{grid-template-columns:1fr;}
+  .footer-top{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<a href="tel:+966559817516" class="call-fab" aria-label="اتصال"><svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .9h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></a>
+<a href="https://wa.me/966559817516" class="wa-fab" aria-label="واتساب">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<header>
+  <div class="logo-wrap"><a href="index.html"><img src="logo.svg" alt="حلول وتميز"></a></div>
+  <nav>
+    <a href="index.html#services">الخدمات</a>
+    <a href="index.html#why">لماذا نحن</a>
+    <a href="index.html#clients">عملاؤنا</a>
+    <a href="index.html#reviews">التقييمات</a>
+    <a href="blog.html" class="active">المدونة</a>
+  </nav>
+  <a href="contact.html" class="cta-btn desktop-only">احجز الآن</a>
+  <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</header>
+
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html#services" onclick="closeMenu()">الخدمات</a>
+  <a href="index.html#why" onclick="closeMenu()">لماذا نحن</a>
+  <a href="index.html#clients" onclick="closeMenu()">عملاؤنا</a>
+  <a href="index.html#reviews" onclick="closeMenu()">التقييمات</a>
+  <a href="blog.html" onclick="closeMenu()">المدونة</a>
+  <a href="contact.html" class="cta-btn" style="text-align:center">احجز الآن</a>
+</div>
+
+<div class="page-hero">
+  <div class="breadcrumb">
+    <a href="index.html">الرئيسية</a>
+    <span>›</span>
+    <span>المدونة</span>
+  </div>
+  <div class="section-label">المدونة</div>
+  <h1>نصائح وأسرار<br><span style="color:var(--lime)">النظافة الاحترافية</span></h1>
+  <p>مقالات متخصصة من خبراء شركة حلول وتميز لخدمات التنظيف في التنظيف وصيانة المنزل — دليلك لبيت أنظف وحياة أفضل.</p>
+</div>
+
+<div class="filters-bar">
+  <button class="filter-btn active" onclick="filterPosts('all',this)">الكل</button>
+  <button class="filter-btn" onclick="filterPosts('tips',this)">نصائح المنزل</button>
+  <button class="filter-btn" onclick="filterPosts('deep',this)">التنظيف العميق</button>
+  <button class="filter-btn" onclick="filterPosts('pest',this)">مكافحة الحشرات</button>
+  <button class="filter-btn" onclick="filterPosts('tanks',this)">الخزانات والمياه</button>
+  <div class="search-wrap">
+    <span class="search-icon">🔍</span>
+    <input type="text" id="searchInput" placeholder="ابحث في المقالات..." oninput="searchPosts()">
+  </div>
+</div>
+
+<!-- FEATURED -->
+<div class="featured-section">
+  <div class="featured-label">مقال مميز</div>
+  <a href="blog/tanzif-amiq-riyadh.html" class="featured-card" style="display:grid">
+    <div class="featured-img">🏠</div>
+    <div class="featured-body">
+      <span class="post-cat">التنظيف العميق</span>
+      <h2>دليلك الشامل للتنظيف العميق للمنازل في الرياض</h2>
+      <p>كل ما تحتاج معرفته عن خدمة التنظيف العميق — الفرق بينها وبين التنظيف العادي، متى تحتاجها، وكيف تختار الشركة المناسبة.</p>
+      <div class="post-meta">
+        <span>📅 ١٠ يونيو ٢٠٢٥</span>
+        <span>⏱️ ٨ دقائق قراءة</span>
+        <span>👁️ ١٢٤٠ مشاهدة</span>
+      </div>
+      <span class="read-btn">اقرأ المقال ←</span>
+    </div>
+  </a>
+</div>
+
+<!-- POSTS GRID -->
+<div class="posts-section">
+  <div class="posts-grid" id="postsGrid">
+
+    <a href="blog/tanzif-khazanat.html" class="post-card" data-cat="tanks">
+      <div class="post-thumb">💧</div>
+      <div class="post-body">
+        <span class="post-cat">الخزانات والمياه</span>
+        <h3>كيف تعرف أن خزان المياه يحتاج تنظيفاً عاجلاً؟</h3>
+        <p>علامات تحذيرية لا تتجاهلها — وخطوات تنظيف الخزان بشكل آمن واحترافي.</p>
+        <div class="post-footer">
+          <div class="post-meta">
+            <span>📅 ٥ يونيو</span>
+            <span>⏱️ ٥ دق</span>
+          </div>
+          <span class="post-link">اقرأ ←</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="blog/mukafaha-hasharaat.html" class="post-card" data-cat="pest">
+      <div class="post-thumb">🛡️</div>
+      <div class="post-body">
+        <span class="post-cat">مكافحة الحشرات</span>
+        <h3>أسباب ظهور الحشرات في المنزل وكيفية التخلص منها نهائياً</h3>
+        <p>تعرف على أسباب انتشار الحشرات وأفضل الطرق الآمنة للقضاء عليها مع الحفاظ على صحة الأسرة.</p>
+        <div class="post-footer">
+          <div class="post-meta">
+            <span>📅 ١ يونيو</span>
+            <span>⏱️ ٦ دق</span>
+          </div>
+          <span class="post-link">اقرأ ←</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="blog/tanzif-majaalis.html" class="post-card" data-cat="tips">
+      <div class="post-thumb">🛋️</div>
+      <div class="post-body">
+        <span class="post-cat">نصائح المنزل</span>
+        <h3>أسرار الحفاظ على نظافة المجالس والكنب بين الجلسات</h3>
+        <p>نصائح ذهبية من متخصصينا لإطالة عمر مجلسك والحفاظ على مظهره الأنيق دائماً.</p>
+        <div class="post-footer">
+          <div class="post-meta">
+            <span>📅 ٢٨ مايو</span>
+            <span>⏱️ ٤ دق</span>
+          </div>
+          <span class="post-link">اقرأ ←</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="blog/tanzif-mkayfat.html" class="post-card" data-cat="deep">
+      <div class="post-thumb">❄️</div>
+      <div class="post-body">
+        <span class="post-cat">التنظيف العميق</span>
+        <h3>لماذا تنظيف المكيفات ضروري قبل موسم الصيف؟</h3>
+        <p>المكيف الملوث يستهلك طاقة أكثر ويضر بصحتك — تعرف على الجدول الأمثل لتنظيفه.</p>
+        <div class="post-footer">
+          <div class="post-meta">
+            <span>📅 ٢٠ مايو</span>
+            <span>⏱️ ٥ دق</span>
+          </div>
+          <span class="post-link">اقرأ ←</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="blog/tanzif-villa.html" class="post-card" data-cat="deep">
+      <div class="post-thumb">🏡</div>
+      <div class="post-body">
+        <span class="post-cat">التنظيف العميق</span>
+        <h3>كيف تنظّف فيلتك بالكامل في يوم واحد؟</h3>
+        <p>خطة عملية منظمة لتنظيف شامل لفيلتك — بالترتيب الصحيح من الأعلى للأسفل.</p>
+        <div class="post-footer">
+          <div class="post-meta">
+            <span>📅 ١٥ مايو</span>
+            <span>⏱️ ٧ دق</span>
+          </div>
+          <span class="post-link">اقرأ ←</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="blog/mawad-tanzif-amina.html" class="post-card" data-cat="tips">
+      <div class="post-thumb">🧴</div>
+      <div class="post-body">
+        <span class="post-cat">نصائح المنزل</span>
+        <h3>مواد التنظيف الآمنة للأطفال والحيوانات الأليفة</h3>
+        <p>دليل شامل لاختيار مواد التنظيف التي لا تضر بصحة أطفالك وحيواناتك الأليفة.</p>
+        <div class="post-footer">
+          <div class="post-meta">
+            <span>📅 ١٠ مايو</span>
+            <span>⏱️ ٥ دق</span>
+          </div>
+          <span class="post-link">اقرأ ←</span>
+        </div>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+<!-- NEWSLETTER -->
+<div class="newsletter">
+  <h3>اشترك في نشرتنا الأسبوعية</h3>
+  <p>نصائح حصرية في التنظيف والصيانة مباشرة على بريدك الإلكتروني.</p>
+  <div class="newsletter-form">
+    <input type="email" placeholder="بريدك الإلكتروني">
+    <button type="button">اشترك الآن</button>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <img src="logo.svg" alt="حلول وتميز">
+      <p>شركة حلول وتميز لخدمات التنظيف — نقدم تنظيفاً احترافياً عميقاً في الرياض بأعلى معايير الجودة.</p>
+    </div>
+    <div class="footer-col">
+      <h5>الخدمات</h5>
+      <ul>
+        <li><a href="services/deep-cleaning.html">التنظيف العميق</a></li>
+        <li><a href="services/pest-control.html">مكافحة الحشرات</a></li>
+        <li><a href="services/tanks.html">تنظيف الخزانات</a></li>
+        <li><a href="services/ac.html">تنظيف المكيفات</a></li>
+        <li><a href="services/sofas.html">تنظيف المجالس</a></li>
+        <li><a href="services/floors.html">الأرضيات والحوائط</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>روابط مهمة</h5>
+      <ul>
+        <li><a href="about.html">من نحن</a></li>
+        <li><a href="blog.html">المدونة</a></li>
+        <li><a href="faq.html">الأسئلة الشائعة</a></li>
+        <li><a href="contact.html">اتصل بنا</a></li>
+        <li><a href="terms.html">الشروط والأحكام</a></li>
+        <li><a href="privacy.html">سياسة الخصوصية</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 شركة حلول وتميز لخدمات التنظيف — جميع الحقوق محفوظة</span>
+    <span>الرياض، المملكة العربية السعودية</span>
+  </div>
+</footer>
+
+<script>
+function toggleMenu(){document.getElementById('mobileNav').classList.toggle('open');}
+function closeMenu(){document.getElementById('mobileNav').classList.remove('open');}
+function filterPosts(cat,btn){
+  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.post-card').forEach(card=>{
+    if(cat==='all'||card.dataset.cat===cat){
+      card.style.display='';
+    } else {
+      card.style.display='none';
+    }
+  });
+}
+function searchPosts(){
+  const q=document.getElementById('searchInput').value.trim().toLowerCase();
+  document.querySelectorAll('.post-card').forEach(card=>{
+    const text=card.innerText.toLowerCase();
+    card.style.display=text.includes(q)?'':'none';
+  });
+}
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='translateY(0)';}
+  });
+},{threshold:0.1});
+document.querySelectorAll('.post-card').forEach(el=>{
+  el.style.opacity='0';el.style.transform='translateY(20px)';
+  el.style.transition='opacity 0.4s ease,transform 0.4s ease';
+  observer.observe(el);
+});
+</script>
+</body>
+</html>
