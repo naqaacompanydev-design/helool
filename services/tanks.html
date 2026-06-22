@@ -51,6 +51,8 @@ nav a:hover{color:var(--white);}nav a:hover::after{width:100%;}
 .service-visual{position:relative;}
 .service-emoji-card{background:var(--dark3);border:1px solid rgba(255,255,255,0.08);border-radius:24px;aspect-ratio:1;display:flex;align-items:center;justify-content:center;font-size:120px;position:relative;overflow:hidden;}
 .service-emoji-card::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at center,rgba(200,224,26,0.06) 0%,transparent 70%);}
+.service-img-card{border-radius:24px;overflow:hidden;aspect-ratio:4/3;position:relative;}
+.service-img-card img{width:100%;height:100%;object-fit:cover;}
 .stat-float{position:absolute;background:var(--dark2);border:1px solid rgba(200,224,26,0.2);border-radius:14px;padding:14px 20px;}
 .stat-float.top-left{top:24px;right:24px;}.stat-float.bottom-right{bottom:24px;left:24px;}
 .stat-float .num{font-size:24px;font-weight:900;color:var(--lime);line-height:1;}.stat-float .lbl{font-size:11px;color:var(--text-dim);margin-top:2px;}
@@ -121,7 +123,8 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,0.06);padding:60
       </div>
     </div>
     <div class="service-visual">
-      <div class="service-emoji-card">💧
+      <div class="service-img-card">
+        <img src="../tanks-bg.jpg" alt="تنظيف وتعقيم خزانات المياه">
         <div class="stat-float top-left"><div class="num">+800</div><div class="lbl">خزان نُظِّف</div></div>
         <div class="stat-float bottom-right"><div class="num">100%</div><div class="lbl">نقاء مضمون</div></div>
       </div>
