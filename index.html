@@ -165,13 +165,17 @@ nav a:hover{color:var(--white);}nav a:hover::after{width:100%;}
 .btn-wa:hover{background:#1eb857;transform:translateY(-2px);box-shadow:0 12px 32px rgba(37,211,102,.25);}
 
 /* ── FOOTER ── */
-footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:28px 0;}
-.footer-inner{max-width:var(--max-w);margin:0 auto;padding:0 24px;}
-.footer-links{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:0;margin-bottom:20px;}
-.footer-links a{font-size:13px;color:var(--text-dim);transition:color .2s;padding:4px 12px;}
+footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:40px 0 28px;}
+.footer-inner{max-width:var(--max-w);margin:0 auto;padding:0 24px;text-align:center;}
+.footer-cr-logo{display:flex;justify-content:center;margin-bottom:14px;}
+.footer-cr-logo img{height:56px;width:auto;border-radius:10px;}
+.footer-cr-info{font-size:13px;color:var(--text-dim);line-height:2;margin-bottom:20px;}
+.footer-cr-info span{display:block;}
+.footer-links{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:0;margin-bottom:8px;}
+.footer-links a{font-size:13px;color:var(--text-dim);transition:color .2s;padding:4px 10px;}
 .footer-links a:hover{color:var(--lime);}
 .footer-links .sep{color:rgba(255,255,255,.15);font-size:11px;}
-.footer-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px;font-size:12px;color:var(--text-dim);border-top:1px solid rgba(255,255,255,.04);padding-top:16px;}
+.footer-bottom{font-size:12px;color:var(--text-dim);border-top:1px solid rgba(255,255,255,.04);padding-top:16px;margin-top:16px;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px;}
 
 /* ── WA FAB ── */
 .wa-fab{position:fixed;bottom:28px;left:28px;z-index:200;width:58px;height:58px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 24px rgba(37,211,102,.4);transition:transform .2s;}
@@ -231,7 +235,7 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:28p
   <div class="header-inner">
     <div class="logo-wrap"><a href="index.html"><img src="logo.svg" alt="حلول وتميز"></a></div>
     <nav>
-      <a href="#services">الخدمات</a>
+      <a href="services.html">الخدمات</a>
       <a href="#why">لماذا نحن</a>
       <a href="#clients">عملاؤنا</a>
       <a href="#reviews">التقييمات</a>
@@ -244,7 +248,7 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:28p
 </header>
 
 <div class="mobile-nav" id="mobileNav">
-  <a href="#services" onclick="closeMenu()">الخدمات</a>
+  <a href="services.html" onclick="closeMenu()">الخدمات</a>
   <a href="#why" onclick="closeMenu()">لماذا نحن</a>
   <a href="#clients" onclick="closeMenu()">عملاؤنا</a>
   <a href="#reviews" onclick="closeMenu()">التقييمات</a>
@@ -510,33 +514,27 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:28p
 <!-- FOOTER -->
 <footer>
   <div class="footer-inner">
+    <div class="footer-cr-logo">
+      <img src="cr-logo.png" alt="شعار السجل التجاري" onerror="this.style.display='none'">
+    </div>
+    <div class="footer-cr-info">
+      <span>سجل تجاري رقم : 7050798722</span>
+      <span>تسجيل ضريبي رقم : 310042572600003</span>
+    </div>
     <div class="footer-links">
       <a href="index.html">الرئيسية</a>
-      <span class="sep">-</span>
-      <a href="services/facade-cleaning.html">تنظيف الواجهات</a>
-      <span class="sep">-</span>
-      <a href="services/facade-polish.html">تلميع الواجهات</a>
-      <span class="sep">-</span>
-      <a href="services/deep-cleaning.html">التنظيف العميق</a>
-      <span class="sep">-</span>
-      <a href="services/pest-control.html">مكافحة الحشرات</a>
-      <span class="sep">-</span>
-      <a href="services/tanks.html">تنظيف الخزانات</a>
-      <span class="sep">-</span>
-      <a href="services/ac.html">تنظيف المكيفات</a>
-      <span class="sep">-</span>
-      <a href="services/sofas.html">تنظيف المجالس</a>
-      <span class="sep">-</span>
-      <a href="services/floors.html">الأرضيات والحوائط</a>
-      <span class="sep">-</span>
-      <a href="faq.html">الأسئلة الشائعة</a>
-      <span class="sep">-</span>
+      <span class="sep">.</span>
+      <a href="services.html">خدماتنا الاحترافية</a>
+      <span class="sep">.</span>
       <a href="blog.html">المدونة</a>
-      <span class="sep">-</span>
+    </div>
+    <div class="footer-links">
+      <a href="faq.html">الأسئلة الشائعة</a>
+      <span class="sep">.</span>
       <a href="contact.html">اتصل بنا</a>
     </div>
     <div class="footer-bottom">
-      <span>© 2025 شركة حلول وتميز لخدمات التنظيف — جميع الحقوق محفوظة</span>
+      <span>شركة حلول وتميز ذكية لخدمات التنظيف — جميع الحقوق محفوظة</span>
       <span><a href="terms.html" style="color:var(--text-dim);text-decoration:none;">الشروط والأحكام</a> | <a href="privacy.html" style="color:var(--text-dim);text-decoration:none;">سياسة الخصوصية</a></span>
     </div>
   </div>
