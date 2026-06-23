@@ -52,48 +52,45 @@ nav a.active::after{width:100%;}
 .page-hero h1{font-size:clamp(36px,5vw,60px);font-weight:900;line-height:1.15;margin-bottom:16px;}
 .page-hero p{font-size:17px;color:var(--text-muted);max-width:520px;line-height:1.8;}
 
-/* FILTERS */
-.filters-bar{padding:32px 5%;background:var(--dark);border-bottom:1px solid rgba(255,255,255,0.06);display:flex;flex-wrap:wrap;gap:10px;align-items:center;}
-.filter-btn{background:transparent;border:1px solid rgba(255,255,255,0.1);color:var(--text-muted);font-family:'Cairo',sans-serif;font-size:13px;font-weight:600;padding:8px 20px;border-radius:50px;cursor:pointer;transition:all 0.2s;}
-.filter-btn:hover,.filter-btn.active{background:rgba(200,224,26,0.1);border-color:rgba(200,224,26,0.4);color:var(--lime);}
-.search-wrap{margin-right:auto;position:relative;}
-.search-wrap input{background:var(--dark2);border:1px solid rgba(255,255,255,0.1);color:var(--text);font-family:'Cairo',sans-serif;font-size:14px;padding:9px 20px 9px 44px;border-radius:50px;outline:none;width:240px;transition:border-color 0.2s;}
-.search-wrap input:focus{border-color:rgba(200,224,26,0.4);}
-.search-wrap input::placeholder{color:var(--text-dim);}
-.search-icon{position:absolute;left:16px;top:50%;transform:translateY(-50%);color:var(--text-dim);font-size:16px;}
 
-/* FEATURED POST */
-.featured-section{padding:64px 5% 0;}
-.featured-label{font-size:12px;font-weight:700;letter-spacing:0.12em;color:var(--lime);text-transform:uppercase;margin-bottom:20px;display:flex;align-items:center;gap:8px;}
-.featured-label::before{content:'';width:20px;height:2px;background:var(--lime);}
-.featured-card{display:grid;grid-template-columns:1.2fr 1fr;background:var(--dark2);border:1px solid rgba(255,255,255,0.08);border-radius:24px;overflow:hidden;transition:border-color 0.3s;}
-.featured-card:hover{border-color:rgba(200,224,26,0.25);}
-.featured-img{aspect-ratio:16/10;background:linear-gradient(135deg,#1a2010 0%,#2a3818 50%,#1a1a10 100%);display:flex;align-items:center;justify-content:center;font-size:80px;position:relative;}
-.featured-img.has-img::after{content:'';position:absolute;inset:0;background:linear-gradient(to left,var(--dark2) 0%,transparent 40%);}
-.featured-body{padding:48px 40px;display:flex;flex-direction:column;justify-content:center;}
-.post-cat{display:inline-block;background:rgba(200,224,26,0.1);border:1px solid rgba(200,224,26,0.2);color:var(--lime);font-size:11px;font-weight:700;padding:4px 14px;border-radius:50px;margin-bottom:20px;}
-.featured-body h2{font-size:clamp(22px,3vw,30px);font-weight:800;line-height:1.3;margin-bottom:16px;color:var(--white);}
-.featured-body p{font-size:15px;color:var(--text-muted);line-height:1.8;margin-bottom:28px;}
-.post-meta{display:flex;align-items:center;gap:20px;font-size:12px;color:var(--text-dim);margin-bottom:24px;}
-.post-meta span{display:flex;align-items:center;gap:5px;}
-.read-btn{display:inline-flex;align-items:center;gap:8px;background:var(--lime);color:var(--dark);font-family:'Cairo',sans-serif;font-size:14px;font-weight:700;padding:12px 28px;border-radius:50px;transition:all 0.2s;align-self:flex-start;}
-.read-btn:hover{background:var(--lime-dark);transform:translateY(-1px);}
+/* BLOG CARDS — naqaa-style */
+.blog-container{max-width:1100px;margin:0 auto;padding:60px 24px 100px;}
+.blog-section-title{font-size:13px;font-weight:700;letter-spacing:.15em;color:var(--lime);text-transform:uppercase;margin-bottom:32px;display:flex;align-items:center;gap:10px;}
+.blog-section-title::before{content:'';width:28px;height:2px;background:var(--lime);}
+
+/* FEATURED CARD */
+.post-card-featured{display:block;border-radius:20px;overflow:hidden;background:var(--dark2);border:1px solid rgba(255,255,255,.07);margin-bottom:48px;transition:border-color .3s,transform .3s;}
+.post-card-featured:hover{border-color:rgba(200,224,26,.3);transform:translateY(-3px);}
+.post-card-featured .post-img{width:100%;height:420px;object-fit:cover;display:block;}
+.post-card-featured .post-info{padding:32px 36px 36px;}
+.post-tag{display:inline-flex;align-items:center;background:rgba(200,224,26,.12);border:1px solid rgba(200,224,26,.25);color:var(--lime);font-size:11px;font-weight:700;letter-spacing:.08em;padding:3px 12px;border-radius:50px;margin-bottom:14px;}
+.post-card-featured h2{font-size:clamp(20px,2.5vw,28px);font-weight:900;color:var(--white);line-height:1.3;margin-bottom:12px;}
+.post-card-featured .post-excerpt{font-size:15px;color:var(--text-muted);line-height:1.8;margin-bottom:20px;max-width:680px;}
+.post-meta-row{display:flex;align-items:center;gap:20px;font-size:13px;color:var(--text-dim);}
+.post-meta-row span{display:flex;align-items:center;gap:5px;}
+.read-more{display:inline-flex;align-items:center;gap:8px;color:var(--lime);font-size:14px;font-weight:700;margin-top:20px;transition:gap .2s;}
+.post-card-featured:hover .read-more{gap:12px;}
 
 /* POSTS GRID */
-.posts-section{padding:64px 5% 100px;}
-.posts-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:24px;}
-.post-card{background:var(--dark2);border:1px solid rgba(255,255,255,0.06);border-radius:var(--radius);overflow:hidden;transition:border-color 0.3s,transform 0.3s;cursor:pointer;}
-.post-card:hover{border-color:rgba(200,224,26,0.25);transform:translateY(-4px);}
-.post-thumb{aspect-ratio:16/9;background:linear-gradient(135deg,#1a1a2a 0%,#2a1a20 50%,#1a2010 100%);display:flex;align-items:center;justify-content:center;font-size:52px;position:relative;overflow:hidden;}
-.post-thumb::after{content:'';position:absolute;bottom:0;left:0;right:0;height:60px;background:linear-gradient(to top,var(--dark2),transparent);}
-.post-body{padding:24px;}
-.post-body .post-cat{margin-bottom:12px;}
-.post-body h3{font-size:18px;font-weight:700;line-height:1.4;margin-bottom:10px;color:var(--white);transition:color 0.2s;}
-.post-card:hover .post-body h3{color:var(--lime);}
-.post-body p{font-size:13px;color:var(--text-muted);line-height:1.7;margin-bottom:20px;}
-.post-footer{display:flex;align-items:center;justify-content:space-between;}
-.post-footer .post-meta{gap:12px;}
-.post-link{font-size:13px;font-weight:600;color:var(--lime);display:flex;align-items:center;gap:4px;}
+.posts-grid-wrap{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px;}
+.post-card{display:block;background:var(--dark2);border:1px solid rgba(255,255,255,.06);border-radius:16px;overflow:hidden;transition:border-color .3s,transform .3s;}
+.post-card:hover{border-color:rgba(200,224,26,.25);transform:translateY(-4px);}
+.post-card .post-img{width:100%;height:200px;object-fit:cover;display:block;}
+.post-card .post-info{padding:20px 22px 24px;}
+.post-card h3{font-size:16px;font-weight:800;color:var(--white);line-height:1.4;margin:10px 0 8px;transition:color .2s;}
+.post-card:hover h3{color:var(--lime);}
+.post-card .post-excerpt{font-size:13px;color:var(--text-muted);line-height:1.7;margin-bottom:16px;}
+.post-card .post-meta-row{font-size:12px;}
+.post-card .read-more{font-size:13px;margin-top:14px;}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .blog-container{padding:40px 16px 60px;}
+  .post-card-featured .post-img{height:240px;}
+  .post-card-featured .post-info{padding:20px 20px 24px;}
+  .post-card-featured h2{font-size:18px;}
+  .post-card-featured .post-excerpt{font-size:14px;}
+}
 
 /* NEWSLETTER */
 .newsletter{background:var(--dark3);border-top:1px solid rgba(255,255,255,0.06);border-bottom:1px solid rgba(255,255,255,0.06);padding:64px 5%;text-align:center;}
@@ -161,41 +158,31 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:40p
   <p>مقالات متخصصة من خبراء شركة حلول وتميز لخدمات التنظيف في التنظيف وصيانة المنزل — دليلك لبيت أنظف وحياة أفضل.</p>
 </div>
 
-<div class="filters-bar">
-  <button class="filter-btn active" onclick="filterPosts('all',this)">الكل</button>
-  <button class="filter-btn" onclick="filterPosts('tips',this)">نصائح المنزل</button>
-  <button class="filter-btn" onclick="filterPosts('deep',this)">التنظيف العميق</button>
-  <button class="filter-btn" onclick="filterPosts('pest',this)">مكافحة الحشرات</button>
-  <button class="filter-btn" onclick="filterPosts('tanks',this)">الخزانات والمياه</button>
-  <div class="search-wrap">
-    <span class="search-icon">🔍</span>
-    <input type="text" id="searchInput" placeholder="ابحث في المقالات..." oninput="searchPosts()">
-  </div>
-</div>
+<div class="blog-container">
 
-<!-- FEATURED -->
-<div class="featured-section">
-  <div class="featured-label">مقال مميز</div>
-  <a href="blog/facade-cleaning-company-riyadh.html" class="featured-card" style="display:grid">
-    <div class="featured-img" style="background:url(blog/facade-cleaning-1.jpg) center/cover no-repeat;min-height:280px;"></div>
-    <div class="featured-body">
-      <span class="post-cat">تنظيف الواجهات</span>
+  <!-- FEATURED -->
+  <div class="blog-section-title">أحدث المقالات</div>
+
+  <a href="blog/facade-cleaning-company-riyadh.html" class="post-card-featured">
+    <img src="blog/facade-hero.jpg" alt="شركة تنظيف واجهات زجاجية بالرياض - حلول وتميز" class="post-img" loading="lazy">
+    <div class="post-info">
+      <span class="post-tag">تنظيف الواجهات</span>
       <h2>شركة تنظيف واجهات زجاجية | خصم 50% | شركة حلول وتميز</h2>
-      <p>تنظيف واجهات الأبراج والشركات والفلل بأحدث المعدات وأعلى معايير السلامة — خبرة واسعة وأسعار تنافسية في الرياض.</p>
-      <div class="post-meta">
-        <span>📅 يونيو ٢٠٢٥</span>
-        <span>⏱️ ١٠ دقائق قراءة</span>
+      <p class="post-excerpt">تنظيف واجهات الأبراج والشركات والفلل بأحدث المعدات وأعلى معايير السلامة — خبرة واسعة في الرياض وأسعار تنافسية مع ضمان الجودة.</p>
+      <div class="post-meta-row">
+        <span>📅 يونيو 2025</span>
+        <span>⏱️ 10 دقائق قراءة</span>
+        <span>📍 الرياض</span>
       </div>
-      <span class="read-btn">اقرأ المقال ←</span>
+      <span class="read-more">اقرأ المقال ←</span>
     </div>
   </a>
-</div>
 
-<!-- POSTS GRID -->
-<div class="posts-section">
-  <div class="posts-grid" id="postsGrid">
-    <!-- مقالات إضافية ستُضاف هنا -->
+  <!-- POSTS GRID — مقالات إضافية -->
+  <div class="posts-grid-wrap" id="postsGrid">
+    <!-- مقالات ستُضاف هنا -->
   </div>
+
 </div>
 
 <!-- NEWSLETTER -->
@@ -239,34 +226,7 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:40p
 <script>
 function toggleMenu(){document.getElementById('mobileNav').classList.toggle('open');}
 function closeMenu(){document.getElementById('mobileNav').classList.remove('open');}
-function filterPosts(cat,btn){
-  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
-  btn.classList.add('active');
-  document.querySelectorAll('.post-card').forEach(card=>{
-    if(cat==='all'||card.dataset.cat===cat){
-      card.style.display='';
-    } else {
-      card.style.display='none';
-    }
-  });
-}
-function searchPosts(){
-  const q=document.getElementById('searchInput').value.trim().toLowerCase();
-  document.querySelectorAll('.post-card').forEach(card=>{
-    const text=card.innerText.toLowerCase();
-    card.style.display=text.includes(q)?'':'none';
-  });
-}
-const observer=new IntersectionObserver(entries=>{
-  entries.forEach(e=>{
-    if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='translateY(0)';}
-  });
-},{threshold:0.1});
-document.querySelectorAll('.post-card').forEach(el=>{
-  el.style.opacity='0';el.style.transform='translateY(20px)';
-  el.style.transition='opacity 0.4s ease,transform 0.4s ease';
-  observer.observe(el);
-});
+
 </script>
 </body>
 </html>
