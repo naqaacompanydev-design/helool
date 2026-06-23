@@ -69,7 +69,7 @@ nav a.active::after{width:100%;}
 .featured-card{display:grid;grid-template-columns:1.2fr 1fr;background:var(--dark2);border:1px solid rgba(255,255,255,0.08);border-radius:24px;overflow:hidden;transition:border-color 0.3s;}
 .featured-card:hover{border-color:rgba(200,224,26,0.25);}
 .featured-img{aspect-ratio:16/10;background:linear-gradient(135deg,#1a2010 0%,#2a3818 50%,#1a1a10 100%);display:flex;align-items:center;justify-content:center;font-size:80px;position:relative;}
-.featured-img::after{content:'';position:absolute;inset:0;background:linear-gradient(to left,var(--dark2) 0%,transparent 40%);}
+.featured-img.has-img::after{content:'';position:absolute;inset:0;background:linear-gradient(to left,var(--dark2) 0%,transparent 40%);}
 .featured-body{padding:48px 40px;display:flex;flex-direction:column;justify-content:center;}
 .post-cat{display:inline-block;background:rgba(200,224,26,0.1);border:1px solid rgba(200,224,26,0.2);color:var(--lime);font-size:11px;font-weight:700;padding:4px 14px;border-radius:50px;margin-bottom:20px;}
 .featured-body h2{font-size:clamp(22px,3vw,30px);font-weight:800;line-height:1.3;margin-bottom:16px;color:var(--white);}
@@ -143,9 +143,11 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:40p
 </header>
 
 <div class="mobile-nav" id="mobileNav">
-  <a href="index.html#services" onclick="closeMenu()">الخدمات</a>
-        <a href="blog.html" onclick="closeMenu()">المدونة</a>
-  <a href="contact.html" class="cta-btn" style="text-align:center">احجز الآن</a>
+  <a href="services.html" onclick="closeMenu()">الخدمات</a>
+  <a href="faq.html" onclick="closeMenu()">الأسئلة الشائعة</a>
+  <a href="blog.html" onclick="closeMenu()">المدونة</a>
+  <a href="contact.html" onclick="closeMenu()">اتصل بنا</a>
+  <a href="contact.html" class="cta-nav" onclick="closeMenu()">احجز الآن</a>
 </div>
 
 <div class="page-hero">
@@ -174,16 +176,15 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:40p
 <!-- FEATURED -->
 <div class="featured-section">
   <div class="featured-label">مقال مميز</div>
-  <a href="blog/tanzif-amiq-riyadh.html" class="featured-card" style="display:grid">
-    <div class="featured-img">🏠</div>
+  <a href="blog/facade-cleaning-company-riyadh.html" class="featured-card" style="display:grid">
+    <div class="featured-img" style="background:url(blog/facade-cleaning-1.jpg) center/cover no-repeat;min-height:280px;"></div>
     <div class="featured-body">
-      <span class="post-cat">التنظيف العميق</span>
-      <h2>دليلك الشامل للتنظيف العميق للمنازل في الرياض</h2>
-      <p>كل ما تحتاج معرفته عن خدمة التنظيف العميق — الفرق بينها وبين التنظيف العادي، متى تحتاجها، وكيف تختار الشركة المناسبة.</p>
+      <span class="post-cat">تنظيف الواجهات</span>
+      <h2>شركة تنظيف واجهات زجاجية | خصم 50% | شركة حلول وتميز</h2>
+      <p>تنظيف واجهات الأبراج والشركات والفلل بأحدث المعدات وأعلى معايير السلامة — خبرة واسعة وأسعار تنافسية في الرياض.</p>
       <div class="post-meta">
-        <span>📅 ١٠ يونيو ٢٠٢٥</span>
-        <span>⏱️ ٨ دقائق قراءة</span>
-        <span>👁️ ١٢٤٠ مشاهدة</span>
+        <span>📅 يونيو ٢٠٢٥</span>
+        <span>⏱️ ١٠ دقائق قراءة</span>
       </div>
       <span class="read-btn">اقرأ المقال ←</span>
     </div>
@@ -193,103 +194,7 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:40p
 <!-- POSTS GRID -->
 <div class="posts-section">
   <div class="posts-grid" id="postsGrid">
-
-    <a href="blog/tanzif-khazanat.html" class="post-card" data-cat="tanks">
-      <div class="post-thumb">💧</div>
-      <div class="post-body">
-        <span class="post-cat">الخزانات والمياه</span>
-        <h3>كيف تعرف أن خزان المياه يحتاج تنظيفاً عاجلاً؟</h3>
-        <p>علامات تحذيرية لا تتجاهلها — وخطوات تنظيف الخزان بشكل آمن واحترافي.</p>
-        <div class="post-footer">
-          <div class="post-meta">
-            <span>📅 ٥ يونيو</span>
-            <span>⏱️ ٥ دق</span>
-          </div>
-          <span class="post-link">اقرأ ←</span>
-        </div>
-      </div>
-    </a>
-
-    <a href="blog/mukafaha-hasharaat.html" class="post-card" data-cat="pest">
-      <div class="post-thumb">🛡️</div>
-      <div class="post-body">
-        <span class="post-cat">مكافحة الحشرات</span>
-        <h3>أسباب ظهور الحشرات في المنزل وكيفية التخلص منها نهائياً</h3>
-        <p>تعرف على أسباب انتشار الحشرات وأفضل الطرق الآمنة للقضاء عليها مع الحفاظ على صحة الأسرة.</p>
-        <div class="post-footer">
-          <div class="post-meta">
-            <span>📅 ١ يونيو</span>
-            <span>⏱️ ٦ دق</span>
-          </div>
-          <span class="post-link">اقرأ ←</span>
-        </div>
-      </div>
-    </a>
-
-    <a href="blog/tanzif-majaalis.html" class="post-card" data-cat="tips">
-      <div class="post-thumb">🛋️</div>
-      <div class="post-body">
-        <span class="post-cat">نصائح المنزل</span>
-        <h3>أسرار الحفاظ على نظافة المجالس والكنب بين الجلسات</h3>
-        <p>نصائح ذهبية من متخصصينا لإطالة عمر مجلسك والحفاظ على مظهره الأنيق دائماً.</p>
-        <div class="post-footer">
-          <div class="post-meta">
-            <span>📅 ٢٨ مايو</span>
-            <span>⏱️ ٤ دق</span>
-          </div>
-          <span class="post-link">اقرأ ←</span>
-        </div>
-      </div>
-    </a>
-
-    <a href="blog/tanzif-mkayfat.html" class="post-card" data-cat="deep">
-      <div class="post-thumb">❄️</div>
-      <div class="post-body">
-        <span class="post-cat">التنظيف العميق</span>
-        <h3>لماذا تنظيف المكيفات ضروري قبل موسم الصيف؟</h3>
-        <p>المكيف الملوث يستهلك طاقة أكثر ويضر بصحتك — تعرف على الجدول الأمثل لتنظيفه.</p>
-        <div class="post-footer">
-          <div class="post-meta">
-            <span>📅 ٢٠ مايو</span>
-            <span>⏱️ ٥ دق</span>
-          </div>
-          <span class="post-link">اقرأ ←</span>
-        </div>
-      </div>
-    </a>
-
-    <a href="blog/tanzif-villa.html" class="post-card" data-cat="deep">
-      <div class="post-thumb">🏡</div>
-      <div class="post-body">
-        <span class="post-cat">التنظيف العميق</span>
-        <h3>كيف تنظّف فيلتك بالكامل في يوم واحد؟</h3>
-        <p>خطة عملية منظمة لتنظيف شامل لفيلتك — بالترتيب الصحيح من الأعلى للأسفل.</p>
-        <div class="post-footer">
-          <div class="post-meta">
-            <span>📅 ١٥ مايو</span>
-            <span>⏱️ ٧ دق</span>
-          </div>
-          <span class="post-link">اقرأ ←</span>
-        </div>
-      </div>
-    </a>
-
-    <a href="blog/mawad-tanzif-amina.html" class="post-card" data-cat="tips">
-      <div class="post-thumb">🧴</div>
-      <div class="post-body">
-        <span class="post-cat">نصائح المنزل</span>
-        <h3>مواد التنظيف الآمنة للأطفال والحيوانات الأليفة</h3>
-        <p>دليل شامل لاختيار مواد التنظيف التي لا تضر بصحة أطفالك وحيواناتك الأليفة.</p>
-        <div class="post-footer">
-          <div class="post-meta">
-            <span>📅 ١٠ مايو</span>
-            <span>⏱️ ٥ دق</span>
-          </div>
-          <span class="post-link">اقرأ ←</span>
-        </div>
-      </div>
-    </a>
-
+    <!-- مقالات إضافية ستُضاف هنا -->
   </div>
 </div>
 
