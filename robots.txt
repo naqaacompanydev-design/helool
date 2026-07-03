@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.helool-sa.com/sitemap.xml
+Sitemap: https://helool-sa.com/sitemap.xml
