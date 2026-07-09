@@ -94,7 +94,7 @@ nav a:hover{color:var(--white);}nav a:hover::after{width:100%;}
 .ba-slider-wrap{max-width:900px;margin:0 auto;}
 .ba-slider{position:relative;width:100%;aspect-ratio:16/10;border-radius:var(--radius);overflow:hidden;cursor:ew-resize;touch-action:none;direction:ltr;box-shadow:0 30px 70px rgba(0,0,0,.5);border:1px solid rgba(255,255,255,.08);}
 .ba-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;user-select:none;pointer-events:none;-webkit-user-drag:none;}
-.ba-before{z-index:1;filter:grayscale(.35) brightness(.55) sepia(.2) contrast(1.05);}
+.ba-before{z-index:1;}
 .ba-after{z-index:2;clip-path:inset(0 0 0 50%);}
 .ba-handle{position:absolute;top:0;bottom:0;left:50%;width:0;z-index:3;transform:translateX(-50%);pointer-events:none;}
 .ba-handle::before{content:'';position:absolute;top:0;bottom:0;left:50%;width:3px;background:var(--lime);transform:translateX(-50%);box-shadow:0 0 12px rgba(200,224,26,.6);}
@@ -308,34 +308,6 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:40p
   </div>
 </div>
 
-<!-- BEFORE / AFTER -->
-<section class="section ba-section">
-  <div class="section-inner">
-    <div class="section-header reveal">
-      <div class="section-label">شاهد بنفسك</div>
-      <h2 class="section-title">الفرق يتكلم عن نفسه</h2>
-      <p class="section-sub">اسحب المؤشر يمين ويسار لتشاهد النتيجة الفعلية لأعمالنا.</p>
-    </div>
-    <div class="ba-slider-wrap reveal">
-      <div class="ba-slider" id="baSlider">
-        <img class="ba-img ba-before" src="facade-cleaning.jpg" alt="قبل تنظيف الواجهة" draggable="false">
-        <img class="ba-img ba-after" src="facade-cleaning.jpg" alt="بعد تنظيف الواجهة" draggable="false">
-        <span class="ba-tag ba-tag-before">قبل</span>
-        <span class="ba-tag ba-tag-after">بعد</span>
-        <div class="ba-handle" id="baHandle">
-          <div class="ba-handle-knob">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#0e0e0e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg>
-          </div>
-        </div>
-      </div>
-      <div class="ba-hint">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg>
-        اسحب لمقارنة النتيجة
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- SERVICES -->
 <section class="section services-section" id="services">
   <div class="section-inner">
@@ -449,6 +421,34 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:40p
 
 
 
+
+<!-- BEFORE / AFTER -->
+<section class="section ba-section">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-label">شاهد بنفسك</div>
+      <h2 class="section-title">الفرق يتكلم عن نفسه</h2>
+      <p class="section-sub">اسحب المؤشر يمين ويسار لتشاهد النتيجة الفعلية لأعمالنا.</p>
+    </div>
+    <div class="ba-slider-wrap reveal">
+      <div class="ba-slider" id="baSlider">
+        <img class="ba-img ba-before" src="before-after-1.jpg" alt="قبل تنظيف الواجهة" draggable="false">
+        <img class="ba-img ba-after" src="before-after-2.jpg" alt="بعد تنظيف الواجهة" draggable="false">
+        <span class="ba-tag ba-tag-before">قبل</span>
+        <span class="ba-tag ba-tag-after">بعد</span>
+        <div class="ba-handle" id="baHandle">
+          <div class="ba-handle-knob">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#0e0e0e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg>
+          </div>
+        </div>
+      </div>
+      <div class="ba-hint">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg>
+        اسحب لمقارنة النتيجة
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- CTA -->
 <section class="cta-section">
