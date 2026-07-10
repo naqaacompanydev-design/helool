@@ -105,6 +105,32 @@ nav a:hover{color:var(--white);}nav a:hover::after{width:100%;}
 .ba-tag-after{right:18px;color:var(--dark);background:var(--lime);border-color:var(--lime);}
 .ba-hint{text-align:center;font-size:13px;color:var(--text-dim);margin-top:20px;display:flex;align-items:center;justify-content:center;gap:8px;}
 
+/* ── HOME CONTACT FORM ── */
+.form-section{padding-bottom:20px;}
+.form-narrow{max-width:640px;margin:0 auto;}
+.contact-form{background:var(--dark2);border:1px solid rgba(255,255,255,.07);border-radius:24px;padding:40px;}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.field{display:flex;flex-direction:column;gap:8px;margin-bottom:20px;}
+.field label{font-size:13px;font-weight:600;color:var(--text-muted);}
+.field label span{color:var(--lime);}
+.field input,.field textarea,.field select{background:var(--dark3);border:1px solid rgba(255,255,255,.08);color:var(--text);font-family:'Cairo',sans-serif;font-size:14px;padding:13px 18px;border-radius:var(--radius-sm);outline:none;transition:border-color .2s;width:100%;}
+.field input:focus,.field textarea:focus,.field select:focus{border-color:rgba(200,224,26,.4);background:var(--dark4);}
+.field input::placeholder,.field textarea::placeholder{color:var(--text-dim);}
+.field textarea{resize:vertical;min-height:110px;}
+.field select option{background:var(--dark3);}
+.submit-btn{display:flex;align-items:center;justify-content:center;gap:10px;background:var(--lime);color:var(--dark);font-family:'Cairo',sans-serif;font-size:16px;font-weight:700;padding:16px 32px;border-radius:50px;border:none;cursor:pointer;width:100%;transition:all .2s;margin-top:8px;}
+.submit-btn:hover{background:var(--lime-dark);transform:translateY(-2px);}
+.submit-btn:active{transform:scale(.97);}
+.submit-btn:disabled{opacity:.6;cursor:not-allowed;transform:none;}
+.form-note{font-size:12px;color:var(--text-dim);text-align:center;margin-top:12px;}
+.success-msg{display:none;background:rgba(37,211,102,.08);border:1px solid rgba(37,211,102,.3);border-radius:var(--radius-sm);padding:20px;text-align:center;margin-top:16px;}
+.success-msg.show{display:block;}
+.success-msg p{color:#25d366;font-size:15px;font-weight:600;}
+@media(max-width:640px){
+  .contact-form{padding:26px 20px;border-radius:18px;}
+  .form-row{grid-template-columns:1fr;gap:0;}
+}
+
 /* ── SECTION BASE ── */
 .section{padding:100px 0;}
 .section-inner{max-width:var(--max-w);margin:0 auto;padding:0 24px;}
@@ -501,6 +527,61 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:40p
   </div>
 </section>
 
+<!-- FORM -->
+<section class="section form-section" id="homeForm">
+  <div class="section-inner">
+    <div class="form-narrow">
+      <div class="section-header reveal">
+        <div class="section-label">اترك بياناتك</div>
+        <h2 class="section-title">احجز معاينتك المجانية الآن</h2>
+        <p class="section-sub">املأ النموذج وسيتواصل معك أحد مشرفينا خلال أقل من ساعة.</p>
+      </div>
+      <div class="contact-form reveal">
+        <div class="form-row">
+          <div class="field">
+            <label>الاسم الكريم <span>*</span></label>
+            <input type="text" id="hfname" placeholder="اسمك الكريم" required>
+          </div>
+          <div class="field">
+            <label>رقم الجوال <span>*</span></label>
+            <input type="tel" id="hfphone" placeholder="05XXXXXXXX" required>
+          </div>
+        </div>
+        <div class="field">
+          <label>الخدمة المطلوبة <span>*</span></label>
+          <select id="hfservice">
+            <option value="" disabled selected>اختر الخدمة</option>
+            <option>التنظيف العميق (منازل / فلل)</option>
+            <option>مكافحة الحشرات والقوارض</option>
+            <option>تنظيف خزانات المياه</option>
+            <option>تنظيف المكيفات والستائر</option>
+            <option>تنظيف المجالس والكنب</option>
+            <option>تنظيف الأرضيات والحوائط</option>
+            <option>عقد سنوي / دوري</option>
+            <option>أكثر من خدمة</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>الحي / المنطقة</label>
+          <input type="text" id="hfarea" placeholder="مثال: النرجس، العليا">
+        </div>
+        <div class="field">
+          <label>تفاصيل إضافية</label>
+          <textarea id="hfmsg" placeholder="أخبرنا أكثر عن احتياجك — المساحة، عدد الغرف، أي ملاحظات..."></textarea>
+        </div>
+        <button class="submit-btn" onclick="submitHomeForm()" id="homeSubmitBtn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          أرسل الطلب
+        </button>
+        <p class="form-note">بإرسال الطلب توافق على تواصلنا معك لخدمتك</p>
+        <div class="success-msg" id="homeSuccessMsg">
+          <p>✅ تم إرسال طلبك بنجاح! سنتواصل معك قريباً.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- FOOTER -->
 <footer>
   <div class="footer-inner">
@@ -533,6 +614,23 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:40p
 <script>
 function toggleMenu(){document.getElementById('mobileNav').classList.toggle('open');}
 function closeMenu(){document.getElementById('mobileNav').classList.remove('open');}
+function submitHomeForm(){
+  const name=document.getElementById('hfname').value.trim();
+  const phone=document.getElementById('hfphone').value.trim();
+  const service=document.getElementById('hfservice').value;
+  if(!name||!phone||!service){alert('يرجى ملء الحقول المطلوبة (الاسم، الجوال، الخدمة)');return;}
+  const btn=document.getElementById('homeSubmitBtn');
+  btn.disabled=true;
+  btn.innerHTML='<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> جاري الإرسال...';
+  setTimeout(()=>{
+    document.getElementById('homeSuccessMsg').classList.add('show');
+    btn.style.display='none';
+    const area=document.getElementById('hfarea').value||'غير محدد';
+    const msg=document.getElementById('hfmsg').value||'';
+    const waMsg=encodeURIComponent(`السلام عليكم،\nاسمي: ${name}\nالجوال: ${phone}\nالخدمة المطلوبة: ${service}\nالحي: ${area}\n${msg?'ملاحظات: '+msg:''}`);
+    setTimeout(()=>{window.open(`https://wa.me/966559817516?text=${waMsg}`,'_blank');},1500);
+  },1000);
+}
 // Reveal on scroll
 const observer = new IntersectionObserver(entries=>{
   entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');});
