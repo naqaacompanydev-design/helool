@@ -1,26 +1,14 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-5N86Z762');</script>
-<!-- End Google Tag Manager -->
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-747142384"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'AW-747142384');
-</script>
 <meta charset="UTF-8">
 <link rel="icon" type="image/png" href="favicon.png">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>المدونة | شركة إعمار المنزل للخدمات المنزلية</title>
-<meta name="description" content="مقالات ونصائح في التنظيف والصيانة المنزلية من خبراء شركة إعمار المنزل للخدمات المنزلية في الرياض.">
-<link rel="canonical" href="https://www.emmar-house.com/blog">
-<meta property="og:title" content="المدونة | شركة إعمار المنزل للخدمات المنزلية">
-<meta property="og:url" content="https://www.emmar-house.com/blog">
-<meta property="og:image" content="https://www.emmar-house.com/blog/images/water-leak-detection-cover.jpg">
+<title>المدونة | شركة حلول وتميز لخدمات التنظيف</title>
+<meta name="description" content="مقالات ونصائح في التنظيف والصيانة المنزلية من خبراء شركة حلول وتميز لخدمات التنظيف في الرياض.">
+<link rel="canonical" href="https://helool-sa.com/blog/">
+<meta property="og:title" content="المدونة | شركة حلول وتميز لخدمات التنظيف">
+<meta property="og:url" content="https://helool-sa.com/blog/">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,9 +22,10 @@ a{text-decoration:none;color:inherit;}
 img{max-width:100%;}
 
 /* HEADER */
-header{position:fixed;top:0;right:0;left:0;z-index:100;background:rgba(14,14,14,0.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(200,224,26,0.12);padding:0 5%;height:102px;display:flex;align-items:center;justify-content:space-between;}
+header{position:fixed;top:0;right:0;left:0;z-index:100;background:rgba(14,14,14,0.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(200,224,26,0.12);padding:0 5%;height:72px;display:flex;align-items:center;justify-content:space-between;}
+header{position:fixed;top:0;right:0;left:0;z-index:100;background:rgba(14,14,14,0.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(200,224,26,0.12);padding:0;height:80px;display:flex;align-items:center;}
 .header-inner{max-width:1200px;margin:0 auto;padding:0 24px;width:100%;display:flex;align-items:center;justify-content:space-between;}
-.logo-wrap img{height:60px;width:auto;}
+.logo-wrap img{height:48px;width:auto;}
 nav{display:flex;align-items:center;gap:20px;}
 nav a{font-size:15px;font-weight:500;color:var(--text-muted);transition:color 0.2s;position:relative;}
 nav a::after{content:'';position:absolute;bottom:-4px;right:0;width:0;height:2px;background:var(--lime);transition:width 0.2s;}
@@ -48,14 +37,21 @@ nav a.active::after{width:100%;}
 .cta-btn:hover{background:var(--lime-dark);transform:translateY(-1px);}
 .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;}
 .hamburger span{width:24px;height:2px;background:var(--text);border-radius:2px;}
-.mobile-nav{display:none;position:fixed;top:102px;right:0;left:0;background:rgba(14,14,14,0.98);padding:24px 5%;flex-direction:column;gap:20px;border-bottom:1px solid rgba(200,224,26,0.12);z-index:99;}
+.mobile-nav{display:none;position:fixed;top:80px;right:0;left:0;background:rgba(14,14,14,0.98);padding:24px 5%;flex-direction:column;gap:20px;border-bottom:1px solid rgba(200,224,26,0.12);z-index:99;}
 .mobile-nav a{font-size:15px;font-weight:500;color:var(--text-muted);padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06);}
 .mobile-nav.open{display:flex;}
 
 /* PAGE HERO */
-.page-hero{padding:150px 5% 28px;background:var(--dark2);border-bottom:1px solid rgba(255,255,255,0.06);position:relative;overflow:hidden;text-align:center;}
+.page-hero{padding:140px 5% 80px;background:var(--dark2);border-bottom:1px solid rgba(255,255,255,0.06);position:relative;overflow:hidden;}
 .page-hero::before{content:'';position:absolute;top:-50%;left:50%;transform:translateX(-50%);width:800px;height:800px;background:radial-gradient(circle,rgba(200,224,26,0.05) 0%,transparent 65%);pointer-events:none;}
-.page-hero h1{font-size:clamp(28px,4vw,40px);font-weight:900;line-height:1.1;position:relative;z-index:1;}
+.breadcrumb{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-dim);margin-bottom:20px;}
+.breadcrumb a{color:var(--text-dim);transition:color 0.2s;}
+.breadcrumb a:hover{color:var(--lime);}
+.breadcrumb span{color:var(--text-dim);}
+.section-label{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:0.15em;color:var(--lime);text-transform:uppercase;margin-bottom:16px;}
+.section-label::before{content:'';width:24px;height:2px;background:var(--lime);}
+.page-hero h1{font-size:clamp(36px,5vw,60px);font-weight:900;line-height:1.15;margin-bottom:16px;}
+.page-hero p{font-size:17px;color:var(--text-muted);max-width:520px;line-height:1.8;}
 
 
 /* BLOG CARDS — naqaa-style */
@@ -111,6 +107,10 @@ nav a.active::after{width:100%;}
 /* ── FOOTER ── */
 footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:40px 0 28px;}
 .footer-inner{max-width:1200px;margin:0 auto;padding:0 24px;text-align:center;}
+.footer-cr-logo{display:flex;justify-content:center;margin-bottom:14px;}
+.footer-cr-logo img{height:80px;width:auto;border-radius:10px;}
+.footer-cr-info{font-size:13px;color:var(--text-dim);line-height:2;margin-bottom:20px;}
+.footer-cr-info span{display:block;}
 .footer-links{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:0;margin-bottom:8px;}
 .footer-links a{font-size:13px;color:var(--text-dim);transition:color .2s;padding:4px 10px;}
 .footer-links a:hover{color:var(--lime);}
@@ -118,334 +118,272 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:40p
 .footer-bottom{font-size:12px;color:var(--text-dim);border-top:1px solid rgba(255,255,255,.04);padding-top:16px;margin-top:16px;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px;}
 @media(max-width:768px){nav{display:none;}.hamburger{display:flex;}}
 
-/* FLOATING ACTION BUTTONS */
-.wa-fab{position:fixed;bottom:28px;left:28px;z-index:200;width:58px;height:58px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 24px rgba(37,211,102,.4);transition:transform .2s;animation:fabAttention 6s ease-in-out infinite;}
-.wa-fab:hover{transform:scale(1.15);animation-play-state:paused;}
-.call-fab{position:fixed;bottom:100px;left:28px;z-index:200;width:58px;height:58px;background:#0e7eff;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 24px rgba(14,126,255,.4);transition:transform .2s;animation:fabAttention 6s ease-in-out infinite 3s;}
-.call-fab:hover{transform:scale(1.15);animation-play-state:paused;}
-@keyframes fabAttention{
-  0%,78%,100%{transform:scale(1) rotate(0deg);}
-  80%{transform:scale(1.12) rotate(-14deg);}
-  82%{transform:scale(1.12) rotate(12deg);}
-  84%{transform:scale(1.12) rotate(-10deg);}
-  86%{transform:scale(1.1) rotate(8deg);}
-  88%{transform:scale(1.08) rotate(-5deg);}
-  90%{transform:scale(1.05) rotate(3deg);}
-  92%,100%{transform:scale(1) rotate(0deg);}
-}
-
-/* DEVELOPER CREDIT BADGE */
-.credit-line{margin-top:18px;display:flex;justify-content:center;}
-.credit-badge{display:inline-flex;align-items:center;gap:7px;padding:8px 18px;border-radius:50px;background:linear-gradient(90deg,rgba(200,224,26,.05),rgba(200,224,26,.12),rgba(200,224,26,.05));background-size:200% auto;border:1px solid rgba(200,224,26,.18);font-size:12px;color:var(--text-dim);transition:all .35s ease;animation:creditShimmerBg 5s linear infinite;}
-.credit-badge:hover{border-color:rgba(200,224,26,.5);transform:translateY(-2px);box-shadow:0 8px 24px rgba(200,224,26,.18);}
-.credit-badge svg{flex-shrink:0;animation:creditSpin 6s linear infinite;}
-.credit-badge a{font-weight:800;text-decoration:none;background:linear-gradient(90deg,#c8e01a,#f3ffb0,#c8e01a);background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;animation:creditShimmerText 3s linear infinite;}
-@keyframes creditShimmerText{0%{background-position:0% center;}100%{background-position:200% center;}}
-@keyframes creditShimmerBg{0%{background-position:0% center;}100%{background-position:200% center;}}
-@keyframes creditSpin{0%,85%,100%{transform:rotate(0deg);}90%{transform:rotate(180deg);}95%{transform:rotate(360deg);}}
-
+/* ── CLICK ZODIAK CREDIT ── */
+.cz-credit{display:flex;align-items:center;justify-content:center;gap:6px;flex-wrap:wrap;text-align:center;font-family:'Cairo',sans-serif;font-size:12px;color:#ffffff;}
+.cz-credit-link{position:relative;font-weight:800;font-size:13px;text-decoration:none;background:linear-gradient(90deg,#c8e01a 0%,#ffffff 50%,#c8e01a 100%);background-size:200% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:czShine 2.8s linear infinite;}
+.cz-credit-link::after{content:'';position:absolute;left:0;right:0;bottom:-3px;height:1px;background:linear-gradient(90deg,transparent,#c8e01a,transparent);opacity:.7;}
+@keyframes czShine{0%{background-position:0% center;}100%{background-position:200% center;}}
 </style>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Blog",
-  "name": "مدونة إعمار المنزل",
-  "url": "https://www.emmar-house.com/blog",
-  "publisher": {"@type": "Organization", "name": "شركة إعمار المنزل للخدمات المنزلية", "logo": {"@type": "ImageObject", "url": "https://www.emmar-house.com/logo.svg"}}
-}
-</script>
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5N86Z762" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 
-<a href="tel:+966504345643" class="call-fab" aria-label="اتصال"><svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .9h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></a>
-<a href="https://wa.me/966504345643" class="wa-fab" aria-label="واتساب">
+<a href="tel:+966559817516" class="call-fab" aria-label="اتصال"><svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .9h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></a>
+<a href="https://wa.me/966559817516" class="wa-fab" aria-label="واتساب">
   <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
 </a>
 
 <header>
   <div class="header-inner">
-    <div class="logo-wrap"><a href="/"><img loading="lazy" src="logo.svg" alt="إعمار المنزل"></a></div>
+    <div class="logo-wrap"><a href="index.html"><img src="logo.svg" alt="حلول وتميز"></a></div>
     <nav>
-      <a href="/about">من نحن</a>
-      <a href="/services">الخدمات</a>
-      <a href="/faq">الأسئلة الشائعة</a>
-      <a href="/blog" class="active">المدونة</a>
-      <a href="/contact">اتصل بنا</a>
-      <a href="/contact" class="cta-nav">احجز الآن</a>
+      <a href="services.html">الخدمات</a>
+      <a href="faq.html">الأسئلة الشائعة</a>
+      <a href="blog.html" class="active">المدونة</a>
+      <a href="contact.html">اتصل بنا</a>
+      <a href="contact.html" class="cta-nav">احجز الآن</a>
     </nav>
     <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
   </div>
 </header>
 
 <div class="mobile-nav" id="mobileNav">
-  <a href="/about" onclick="closeMenu()">من نحن</a>
-  <a href="/services" onclick="closeMenu()">الخدمات</a>
-  <a href="/faq" onclick="closeMenu()">الأسئلة الشائعة</a>
-  <a href="/blog" onclick="closeMenu()">المدونة</a>
-  <a href="/contact" onclick="closeMenu()">اتصل بنا</a>
-  <a href="/contact" class="cta-nav" onclick="closeMenu()">احجز الآن</a>
+  <a href="services.html" onclick="closeMenu()">الخدمات</a>
+  <a href="faq.html" onclick="closeMenu()">الأسئلة الشائعة</a>
+  <a href="blog.html" onclick="closeMenu()">المدونة</a>
+  <a href="contact.html" onclick="closeMenu()">اتصل بنا</a>
+  <a href="contact.html" class="cta-nav" onclick="closeMenu()">احجز الآن</a>
 </div>
 
 <div class="page-hero">
-  <h1>المدونة</h1>
+  <div class="breadcrumb">
+    <a href="index.html">الرئيسية</a>
+    <span>›</span>
+    <span>المدونة</span>
+  </div>
+  <div class="section-label">المدونة</div>
+  <h1>نصائح وأسرار<br><span style="color:var(--lime)">النظافة الاحترافية</span></h1>
+  <p>مقالات متخصصة من خبراء شركة حلول وتميز لخدمات التنظيف في التنظيف وصيانة المنزل — دليلك لبيت أنظف وحياة أفضل.</p>
 </div>
 
 <div class="blog-container">
 
-  <!-- FEATURED POST -->
-  <a href="/blog/guaranteed-water-leak-detection-riyadh" class="post-card-featured">
-    <img loading="lazy" class="post-img" src="blog/images/leak-guaranteed-cover.jpg" alt="شركة كشف تسربات المياه مضمونة بالرياض">
+  <!-- FEATURED -->
+  <div class="blog-section-title">أحدث المقالات</div>
+
+  <a href="blog/bird-droppings-manwar-cleaning-riyadh.html" class="post-card-featured">
+    <img src="blog/bird-droppings-cleaning-hero.jpg" alt="شركة تنظيف مخلفات الطيور وتنظيف المناور بالمباني بالرياض - حلول وتميز" class="post-img" loading="lazy">
     <div class="post-info">
-      <span class="post-tag">كشف تسربات المياه</span>
-      <h2>شركة كشف تسربات المياه مضمونة بالرياض | شركة إعمار المنزل للخدمات المنزلية</h2>
-      <p class="post-excerpt">دليل شامل عن أسباب وأخطار تسربات المياه، أحدث أجهزة الكشف، ومراحل الفحص والإصلاح بضمان على الخدمة.</p>
+      <span class="post-tag">خدمات التنظيف</span>
+      <h2>شركة تنظيف مخلفات الطيور وتنظيف المناور بالمباني | شركة حلول وتميز للتنظيف</h2>
+      <p class="post-excerpt">إزالة مخلفات الطيور وتعقيم المناور الزجاجية بالرياض بمحاليل ومعدات آمنة على الزجاج والأسطح.</p>
       <div class="post-meta-row">
-        <span>📅 آخر تحديث: ٢٠٢٦</span>
-        <span>⏱ 16 دقيقة قراءة</span>
+        <span>📅 يوليو 2026</span>
+        <span>⏱️ 22 دقيقة قراءة</span>
+        <span>📍 الرياض</span>
       </div>
-      <span class="read-more">اقرأ المقال كاملاً ←</span>
+      <span class="read-more">اقرأ المقال ←</span>
     </div>
   </a>
 
   <!-- POSTS GRID -->
-  <div class="posts-grid-wrap">
-    <a href="/blog/water-bill-increase-solution-riyadh" class="post-card">
-      <img loading="lazy" class="post-img" src="blog/images/water-bill-increase-inspection-cover.jpg" alt="حل مشكلة ارتفاع فاتورة المياه مع ضمان الجودة">
+  <div class="posts-grid-wrap" id="postsGrid">
+
+    <a href="blog/government-facade-cleaning-riyadh.html" class="post-card">
+      <img src="blog/government-facade-cleaning-hero.jpg" alt="أفضل شركة تنظيف واجهات المباني والمنشآت الحكومية بالرياض - حلول وتميز" class="post-img" loading="lazy">
       <div class="post-info">
-        <span class="post-tag">كشف تسربات المياه</span>
-        <h3>حل مشكلة ارتفاع فاتورة المياه مع ضمان الجودة | شركة إعمار المنزل للخدمات المنزلية</h3>
-        <p class="post-excerpt">الأسباب الحقيقية لارتفاع فاتورة المياه، واختبار بسيط لمعرفة إذا كان السبب تسربًا في الخزان.</p>
+        <span class="post-tag">تنظيف الواجهات</span>
+        <h3>افضل شركة تنظيف واجهات المباني والمنشأت الحكومية | شركة حلول وتميز للتنظيف</h3>
+        <p class="post-excerpt">تنظيف واجهات المباني والمنشآت الحكومية بالرياض بأعلى معايير السلامة والاحترافية لدى الوزارات والهيئات الرسمية.</p>
         <div class="post-meta-row">
-          <span>📅 ٢٠٢٦</span>
-          <span>⏱ 12 دقيقة</span>
+          <span>📅 يوليو 2026</span>
+          <span>⏱️ 24 دقيقة قراءة</span>
         </div>
-        <span class="read-more">اقرأ المزيد ←</span>
+        <span class="read-more">اقرأ المقال ←</span>
       </div>
     </a>
-    <a href="/blog/cheapest-tank-insulation-riyadh" class="post-card">
-      <img loading="lazy" class="post-img" src="blog/images/cheapest-tank-insulation-riyadh-cover.jpg" alt="أرخص شركة عزل خزانات بالرياض مع ضمان الجودة">
+
+    <a href="blog/villa-facade-prices-riyadh.html" class="post-card">
+      <img src="blog/villa-facade-prices-hero.jpg" alt="شركة تنظيف واجهات زجاجية بالرياض بأسعار معقولة - حلول وتميز" class="post-img" loading="lazy">
       <div class="post-info">
-        <span class="post-tag">عزل الخزانات</span>
-        <h3>أرخص شركة عزل خزانات بالرياض مع ضمان الجودة | شركة إعمار المنزل للخدمات المنزلية</h3>
-        <p class="post-excerpt">كيف تحصل على أفضل سعر دون التضحية بالجودة، وعلامات تحذيرية لتجنب العروض المضللة.</p>
+        <span class="post-tag">تنظيف الواجهات</span>
+        <h3>تنظيف واجهات الفلل | اسعار معقولة وليس مبالغ فيها | إدارة سعودية</h3>
+        <p class="post-excerpt">تنظيف واجهات الفلل الزجاجية بأسعار معقولة وشفافة تحت إدارة سعودية موثوقة دون رسوم مخفية.</p>
         <div class="post-meta-row">
-          <span>📅 ٢٠٢٦</span>
-          <span>⏱ 13 دقيقة</span>
+          <span>📅 يوليو 2026</span>
+          <span>⏱️ 22 دقيقة قراءة</span>
         </div>
-        <span class="read-more">اقرأ المزيد ←</span>
+        <span class="read-more">اقرأ المقال ←</span>
       </div>
     </a>
-    <a href="/blog/rainwater-leak-ground-tank-riyadh" class="post-card">
-      <img loading="lazy" class="post-img" src="blog/images/rainwater-leak-ground-tank-cover.jpg" alt="حل مشكلة تسريب مياه الامطار للخزانات الارضية بالرياض">
+
+    <a href="blog/stone-facade-cleaning-riyadh.html" class="post-card">
+      <img src="blog/stone-facade-cleaning-hero.jpg" alt="شركة تنظيف واجهات حجرية بالرياض - حلول وتميز" class="post-img" loading="lazy">
       <div class="post-info">
-        <span class="post-tag">عزل الخزانات</span>
-        <h3>حل مشكلة تسريب مياه الامطار للخزانات الارضية بالرياض | عزل خزانات | شركة إعمار المنزل للخدمات المنزلية</h3>
-        <p class="post-excerpt">لماذا تتسرب مياه الأمطار إلى الخزانات الأرضية، وخطوات حل المشكلة نهائيًا قبل موسم الأمطار القادم.</p>
+        <span class="post-tag">تنظيف الواجهات</span>
+        <h3>تنظيف واجهات الفلل الحجرية بالرياض | أفضل شركة لإزالة التمليح والبقع دون تلف</h3>
+        <p class="post-excerpt">إزالة التمليح وبقع الأملاح عن واجهات الحجر والرخام بمحاليل معالجة متخصصة دون تلف.</p>
         <div class="post-meta-row">
-          <span>📅 ٢٠٢٦</span>
-          <span>⏱ 14 دقيقة</span>
+          <span>📅 يوليو 2026</span>
+          <span>⏱️ 22 دقيقة قراءة</span>
         </div>
-        <span class="read-more">اقرأ المزيد ←</span>
+        <span class="read-more">اقرأ المقال ←</span>
       </div>
     </a>
-    <a href="/blog/tank-clean-disinfect-insulation-riyadh" class="post-card">
-      <img loading="lazy" class="post-img" src="blog/images/tank-clean-disinfect-insulation-cover.jpg" alt="شركة تنظيف وتعقيم وعزل الخزانات بالرياض">
+
+    <a href="blog/cleaning-company-riyadh-number.html" class="post-card">
+      <img src="blog/cleaning-company-riyadh-hero.jpg" alt="رقم شركة تنظيف بالرياض - حلول وتميز" class="post-img" loading="lazy">
       <div class="post-info">
-        <span class="post-tag">عزل الخزانات</span>
-        <h3>شركة تنظيف وتعقيم وعزل الخزانات بالرياض | شركة إعمار المنزل للخدمات المنزلية</h3>
-        <p class="post-excerpt">لماذا يجب أن يسبق التعقيم عملية العزل دائمًا، وخطوات الخدمة الكاملة من التفريغ حتى العزل النهائي.</p>
+        <span class="post-tag">خدمات التنظيف</span>
+        <h3>رقم شركة تنظيف بالرياض | خدمات التنظيف الشامل للفلل والمنشآت</h3>
+        <p class="post-excerpt">خدمات تنظيف شاملة للفلل والمنازل والمنشآت والمستشفيات بأحدث المعدات، ورقم تواصل مباشر.</p>
         <div class="post-meta-row">
-          <span>📅 ٢٠٢٦</span>
-          <span>⏱ 13 دقيقة</span>
+          <span>📅 يوليو 2026</span>
+          <span>⏱️ 22 دقيقة قراءة</span>
         </div>
-        <span class="read-more">اقرأ المزيد ←</span>
+        <span class="read-more">اقرأ المقال ←</span>
       </div>
     </a>
-    <a href="/blog/leak-detection-service-return-warranty-riyadh" class="post-card">
-      <img loading="lazy" class="post-img" src="blog/images/leak-warranty-return-floor-damage.jpg" alt="بضمان عودة علي الخدمة - كشف تسربات المياه بالرياض">
+
+    <a href="blog/paint-residue-removal-riyadh.html" class="post-card">
+      <img src="blog/paint-residue-removal-hero.jpg" alt="شركة تنظيف بواقي الدهان والبويات بالرياض - حلول وتميز" class="post-img" loading="lazy">
       <div class="post-info">
-        <span class="post-tag">كشف تسربات المياه</span>
-        <h3>بضمان عودة علي الخدمة | كشف تسربات المياه بالرياض | شركة إعمار المنزل للخدمات المنزلية</h3>
-        <p class="post-excerpt">ما معنى ضمان عودة الخدمة، ولماذا يعود التسرب أحيانًا بعد الإصلاح، وكيف تحمي ميزانيتك من التكرار.</p>
+        <span class="post-tag">تنظيف الواجهات</span>
+        <h3>إزالة بقايا الدهانات من الواجهات بالرياض | أفضل شركة لتنظيف بواقي الدهان والبويات</h3>
+        <p class="post-excerpt">إزالة بقايا الدهانات والبويات عن الواجهات والأرضيات والحوائط بأحدث الأدوات دون خدوش.</p>
         <div class="post-meta-row">
-          <span>📅 ٢٠٢٦</span>
-          <span>⏱ 13 دقيقة</span>
+          <span>📅 يوليو 2026</span>
+          <span>⏱️ 22 دقيقة قراءة</span>
         </div>
-        <span class="read-more">اقرأ المزيد ←</span>
+        <span class="read-more">اقرأ المقال ←</span>
       </div>
     </a>
-    <a href="/blog/tank-insulation-official-warranty-riyadh" class="post-card">
-      <img loading="lazy" class="post-img" src="blog/images/tank-warranty-official-epoxy-corner.jpg" alt="بضمان رسمي موثق - عزل خزانات بالرياض">
+
+    <a href="blog/banks-facade-cleaning-riyadh.html" class="post-card">
+      <img src="blog/banks-facade-cleaning-hero.jpg" alt="شركة تنظيف واجهات بنوك بالرياض - حلول وتميز" class="post-img" loading="lazy">
       <div class="post-info">
-        <span class="post-tag">عزل الخزانات</span>
-        <h3>بضمان رسمي موثق | عزل خزانات بالرياض | شركة إعمار المنزل للخدمات المنزلية</h3>
-        <p class="post-excerpt">الفرق بين الضمان الشفهي والرسمي الموثق، وما يجب معرفته قبل توقيع أي عقد عزل خزان.</p>
+        <span class="post-tag">تنظيف الواجهات</span>
+        <h3>شركة تنظيف واجهات البنوك بالرياض | شركة حلول وتميز للتنظيف</h3>
+        <p class="post-excerpt">تنظيف واجهات فروع البنوك الزجاجية والألوميتال بأحدث المعدات ومعايير سلامة عالية.</p>
         <div class="post-meta-row">
-          <span>📅 ٢٠٢٦</span>
-          <span>⏱ 12 دقيقة</span>
+          <span>📅 يوليو 2026</span>
+          <span>⏱️ 22 دقيقة قراءة</span>
         </div>
-        <span class="read-more">اقرأ المزيد ←</span>
+        <span class="read-more">اقرأ المقال ←</span>
       </div>
     </a>
-    <a href="/blog/ground-tank-insulation-company-riyadh" class="post-card">
-      <img loading="lazy" class="post-img" src="blog/images/ground-tank-insulation-epoxy-floor.jpg" alt="شركة عزل خزانات ارضية بالرياض">
+
+    <a href="blog/cradle-facade-cleaning-riyadh.html" class="post-card">
+      <img src="blog/cradle-facade-cleaning-hero.jpg" alt="شركة تنظيف واجهات بالكرابل بالرياض - حلول وتميز" class="post-img" loading="lazy">
       <div class="post-info">
-        <span class="post-tag">عزل الخزانات</span>
-        <h3>شركة عزل خزانات ارضية بالرياض | إعمار المنزل للخدمات المنزلية</h3>
-        <p class="post-excerpt">دليل شامل عن عزل الخزانات الأرضية: التهوية، التنظيف، مواد الإيبوكسي، وخطوات التنفيذ الآمنة.</p>
+        <span class="post-tag">تنظيف الواجهات</span>
+        <h3>تنظيف الواجهات بالكرابل بالرياض | شركة حلول وتميز للتنظيف</h3>
+        <p class="post-excerpt">تنظيف واجهات الأبراج والمباني المرتفعة بتقنية الكرابل بأعلى معايير السلامة وفريق مدرب على أحدث المعدات.</p>
         <div class="post-meta-row">
-          <span>📅 ٢٠٢٦</span>
-          <span>⏱ 14 دقيقة</span>
+          <span>📅 يوليو 2026</span>
+          <span>⏱️ 22 دقيقة قراءة</span>
         </div>
-        <span class="read-more">اقرأ المزيد ←</span>
+        <span class="read-more">اقرأ المقال ←</span>
       </div>
     </a>
-    <a href="/blog/damp-treatment-olaya-sahafa-riyadh" class="post-card">
-      <img loading="lazy" class="post-img" src="blog/images/damp-treatment-olaya-sahafa-damage.jpg" alt="أفضل شركة معالجة رطوبة بحي العليا والصحافة">
+
+    <a href="blog/adhesive-glass-removal-riyadh.html" class="post-card">
+      <img src="blog/adhesive-glass-removal-hero.jpg" alt="افضل شركة ازالة اللاصق من الزجاج بالرياض - حلول وتميز" class="post-img" loading="lazy">
       <div class="post-info">
-        <span class="post-tag">معالجة الرطوبة</span>
-        <h3>أفضل شركة معالجة رطوبة بحي العليا والصحافة | إعمار المنزل للخدمات المنزلية</h3>
-        <p class="post-excerpt">تشخيص دقيق لمصدر الرطوبة سواء كانت تسربًا مخفيًا أو مشكلة تهوية، ومعالجة نهائية بضمان مكتوب.</p>
+        <span class="post-tag">تنظيف الواجهات</span>
+        <h3>افضل شركة ازالة اللاصق من الزجاج بالرياض | شركة حلول وتميز للتنظيف</h3>
+        <p class="post-excerpt">إزالة اللاصق القديم وطلاء الحماية والأصباغ عن واجهات الزجاج للمنازل والفلل والشركات بأحدث الأدوات.</p>
         <div class="post-meta-row">
-          <span>📅 ٢٠٢٦</span>
-          <span>⏱ 15 دقيقة</span>
+          <span>📅 يوليو 2026</span>
+          <span>⏱️ 22 دقيقة قراءة</span>
         </div>
-        <span class="read-more">اقرأ المزيد ←</span>
+        <span class="read-more">اقرأ المقال ←</span>
       </div>
     </a>
-    <a href="/blog/leak-detection-company-malqa-hittin-riyadh" class="post-card">
-      <img loading="lazy" class="post-img" src="blog/images/leak-detection-malqa-hittin-pipe-damage.jpg" alt="أفضل شركة كشف تسربات المياه بحي الملقا وحي حطين">
+
+    <a href="blog/facade-cleaning-company-riyadh.html" class="post-card">
+      <img src="blog/facade-hero.jpg" alt="شركة تنظيف واجهات زجاجية بالرياض - حلول وتميز" class="post-img" loading="lazy">
       <div class="post-info">
-        <span class="post-tag">كشف تسربات المياه</span>
-        <h3>أفضل شركة كشف تسربات المياه بحي الملقا وحي حطين | إعمار المنزل للخدمات المنزلية</h3>
-        <p class="post-excerpt">دليل شامل عن كشف تسربات المياه بأحدث الأجهزة الإلكترونية بدون تكسير في حي الملقا وحي حطين والأحياء المجاورة.</p>
+        <span class="post-tag">تنظيف الواجهات</span>
+        <h3>شركة تنظيف واجهات زجاجية | خصم 50% | شركة حلول وتميز</h3>
+        <p class="post-excerpt">تنظيف واجهات الأبراج والشركات والفلل بأحدث المعدات وأعلى معايير السلامة — خبرة واسعة في الرياض وأسعار تنافسية مع ضمان الجودة.</p>
         <div class="post-meta-row">
-          <span>📅 ٢٠٢٦</span>
-          <span>⏱ 15 دقيقة</span>
+          <span>📅 يونيو 2025</span>
+          <span>⏱️ 10 دقائق قراءة</span>
         </div>
-        <span class="read-more">اقرأ المزيد ←</span>
+        <span class="read-more">اقرأ المقال ←</span>
       </div>
     </a>
-    <a href="/blog/leak-detection-company-olaya-riyadh" class="post-card">
-      <img loading="lazy" class="post-img" src="blog/images/leak-detection-olaya-cover.jpg" alt="أفضل شركة كشف تسربات المياه بحي العليا">
+
+    <a href="blog/cladding-facade-cleaning-riyadh.html" class="post-card">
+      <img src="blog/cladding-cleaning-hero.jpg" alt="افضل شركة تنظيف واجهات كلادينج بالرياض - حلول وتميز" class="post-img" loading="lazy">
       <div class="post-info">
-        <span class="post-tag">كشف تسربات المياه</span>
-        <h3>أفضل شركة كشف تسربات المياه بحي العليا | إعمار المنزل للخدمات المنزلية</h3>
-        <p class="post-excerpt">دليل شامل عن كشف تسربات المياه بأحدث الأجهزة الإلكترونية بدون تكسير في حي العليا والأحياء المجاورة.</p>
+        <span class="post-tag">تنظيف الواجهات</span>
+        <h3>افضل شركة تنظيف واجهات كلادينج بالرياض | شركة حلول وتميز للتنظيف</h3>
+        <p class="post-excerpt">تنظيف واجهات الكلادينج والحجر للأبراج والشركات والفلل — خبرة واسعة وأحدث المعدات في الرياض.</p>
         <div class="post-meta-row">
-          <span>📅 ٢٠٢٦</span>
-          <span>⏱ 14 دقيقة</span>
+          <span>📅 يونيو 2025</span>
+          <span>⏱️ 15 دقيقة قراءة</span>
         </div>
-        <span class="read-more">اقرأ المزيد ←</span>
+        <span class="read-more">اقرأ المقال ←</span>
       </div>
     </a>
-    <a href="/blog/tank-insulation-10-year-warranty-riyadh" class="post-card">
-      <img loading="lazy" class="post-img" src="blog/images/tank-warranty-cover.jpg" alt="شركة عزل خزانات بضمان 10 سنوات بالرياض">
+
+    <a href="blog/companies-offices-facade-cleaning-riyadh.html" class="post-card">
+      <img src="blog/companies-facade-cleaning-hero.jpg" alt="افضل شركة تنظيف واجهات شركات ومكاتب بالرياض - حلول وتميز" class="post-img" loading="lazy">
       <div class="post-info">
-        <span class="post-tag">عزل خزانات المياه</span>
-        <h3>شركة عزل خزانات بضمان 10 سنوات بالرياض | شركة إعمار المنزل للخدمات المنزلية</h3>
-        <p class="post-excerpt">تعرف على خدمة عزل الخزانات بضمان حقيقي يمتد 10 سنوات والمواد المعتمدة المستخدمة.</p>
+        <span class="post-tag">تنظيف الواجهات</span>
+        <h3>افضل شركة تنظيف واجهات شركات ومكاتب بالرياض | شركة حلول وتميز لخدمات التنظيف</h3>
+        <p class="post-excerpt">تنظيف واجهات الشركات والمكاتب والأبراج التجارية — كلادينج وزجاج وحجر بأحدث المعدات وضمان على الجودة.</p>
         <div class="post-meta-row">
-          <span>📅 ٢٠٢٦</span>
-          <span>⏱ 15 دقيقة</span>
+          <span>📅 يونيو 2025</span>
+          <span>⏱️ 20 دقيقة قراءة</span>
         </div>
-        <span class="read-more">اقرأ المزيد ←</span>
+        <span class="read-more">اقرأ المقال ←</span>
       </div>
     </a>
-    <a href="/blog/damp-wall-treatment-company-riyadh" class="post-card">
-      <img loading="lazy" class="post-img" src="blog/images/damp-treatment-cover.jpg" alt="شركة معالجة رطوبة الجدران بالرياض">
+
+    <a href="blog/shops-malls-signs-cleaning-riyadh.html" class="post-card">
+      <img src="blog/shops-malls-cleaning-hero.jpg" alt="شركة تنظيف لوحات المحلات والمولات بالرياض - حلول وتميز" class="post-img" loading="lazy">
       <div class="post-info">
-        <span class="post-tag">معالجة رطوبة الجدران</span>
-        <h3>شركة معالجة رطوبة الجدران بالرياض | شركة إعمار المنزل للخدمات المنزلية</h3>
-        <p class="post-excerpt">دليل شامل عن أسباب رطوبة الجدران وطرق الكشف والمعالجة الاحترافية الجذرية.</p>
+        <span class="post-tag">تنظيف الواجهات</span>
+        <h3>شركة تنظيف لوحات المحلات والمولات | شركة حلول وتميز لخدمات التنظيف</h3>
+        <p class="post-excerpt">تنظيف لوحات الكلادنج والحروف البارزة وLED وواجهات المحلات التجارية والمولات بالرياض باحترافية وجودة عالية.</p>
         <div class="post-meta-row">
-          <span>📅 ٢٠٢٦</span>
-          <span>⏱ 15 دقيقة</span>
+          <span>📅 يونيو 2025</span>
+          <span>⏱️ 20 دقيقة قراءة</span>
         </div>
-        <span class="read-more">اقرأ المزيد ←</span>
+        <span class="read-more">اقرأ المقال ←</span>
       </div>
     </a>
-    <a href="/blog/best-home-inspection-company-riyadh" class="post-card">
-      <img loading="lazy" class="post-img" src="blog/images/home-inspection-cover.jpg" alt="أفضل شركة فحص منازل بالرياض">
+
+    <a href="blog/floor-polishing-marble-tiles-riyadh.html" class="post-card">
+      <img src="blog/floor-polishing-riyadh-hero.jpg" alt="افضل شركة جلي بلاط ورخام بالرياض - حلول وتميز" class="post-img" loading="lazy">
       <div class="post-info">
-        <span class="post-tag">فحص المنازل والفلل</span>
-        <h3>أفضل شركة فحص منازل بالرياض | شركة إعمار المنزل للخدمات المنزلية</h3>
-        <p class="post-excerpt">دليل شامل عن فحص التكييفات والتسريبات والرطوبة والخزانات والجدران والمواسير.</p>
+        <span class="post-tag">جلي وتلميع الأرضيات</span>
+        <h3>افضل شركة جلي بلاط ورخام بالرياض | شركة حلول وتميز للتنظيف</h3>
+        <p class="post-excerpt">جلي وتلميع وصقل الرخام والبلاط للمنازل والفلل والشركات والمساجد — معدات حديثة وضمان على الجودة.</p>
         <div class="post-meta-row">
-          <span>📅 ٢٠٢٦</span>
-          <span>⏱ 13 دقيقة</span>
+          <span>📅 يونيو 2025</span>
+          <span>⏱️ 20 دقيقة قراءة</span>
         </div>
-        <span class="read-more">اقرأ المزيد ←</span>
+        <span class="read-more">اقرأ المقال ←</span>
       </div>
     </a>
-    <a href="/blog/best-roof-insulation-company-riyadh" class="post-card">
-      <img loading="lazy" class="post-img" src="blog/images/roof-insulation-riyadh-cover.jpg" alt="أفضل شركة عزل اسطح في الرياض واحيائها">
+
+    <a href="blog/south-riyadh-facade-cleaning-company.html" class="post-card">
+      <img src="blog/south-riyadh-facade-cleaning-hero.jpg" alt="أفضل شركة تنظيف واجهات بجنوب الرياض - حلول وتميز" class="post-img" loading="lazy">
       <div class="post-info">
-        <span class="post-tag">عزل الأسطح</span>
-        <h3>أفضل شركة عزل اسطح في الرياض واحيائها | شركة إعمار المنزل للخدمات المنزلية</h3>
-        <p class="post-excerpt">دليل شامل عن عزل الأسطح المائي والحراري في جميع أحياء الرياض، وأفضل المواد وخطوات التنفيذ.</p>
+        <span class="post-tag">تنظيف الواجهات</span>
+        <h3>أفضل شركة تنظيف واجهات بجنوب الرياض | شركة حلول وتميز للتنظيف</h3>
+        <p class="post-excerpt">تنظيف واجهات زجاج وحجر وكلادينج للفلل والشركات والأبراج والمحلات في جنوب الرياض — خبرة واحترافية وضمان جودة.</p>
         <div class="post-meta-row">
-          <span>📅 ٢٠٢٦</span>
-          <span>⏱ 13 دقيقة</span>
+          <span>📅 يوليو 2025</span>
+          <span>⏱️ 20 دقيقة قراءة</span>
         </div>
-        <span class="read-more">اقرأ المزيد ←</span>
+        <span class="read-more">اقرأ المقال ←</span>
       </div>
     </a>
-    <a href="/blog/best-roof-insulation-company-north-riyadh" class="post-card">
-      <img loading="lazy" class="post-img" src="blog/images/roof-insulation-north-riyadh-cover.jpg" alt="أفضل شركة عزل أسطح بشمال الرياض">
-      <div class="post-info">
-        <span class="post-tag">عزل الأسطح</span>
-        <h3>أفضل شركة عزل أسطح بشمال الرياض | شركة إعمار المنزل للخدمات</h3>
-        <p class="post-excerpt">دليل شامل عن عزل الأسطح المائي والحراري في أحياء شمال الرياض وأفضل المواد المستخدمة.</p>
-        <div class="post-meta-row">
-          <span>📅 ٢٠٢٦</span>
-          <span>⏱ 10 دقائق</span>
-        </div>
-        <span class="read-more">اقرأ المزيد ←</span>
-      </div>
-    </a>
-    <a href="/blog/best-tank-insulation-company-riyadh-districts" class="post-card">
-      <img loading="lazy" class="post-img" src="blog/images/tank-insulation-riyadh-cover.jpg" alt="أفضل شركة عزل خزانات في الرياض واحيائها">
-      <div class="post-info">
-        <span class="post-tag">عزل خزانات المياه</span>
-        <h3>أفضل شركة عزل خزانات في الرياض واحيائها | شركة إعمار المنزل للخدمات المنزلية</h3>
-        <p class="post-excerpt">دليل شامل عن عزل الخزانات الأرضية والعلوية في جميع أحياء الرياض، والمواد الآمنة صحيًا وخطوات التنفيذ.</p>
-        <div class="post-meta-row">
-          <span>📅 ٢٠٢٦</span>
-          <span>⏱ 13 دقيقة</span>
-        </div>
-        <span class="read-more">اقرأ المزيد ←</span>
-      </div>
-    </a>
-    <a href="/blog/best-tank-insulation-company-riyadh" class="post-card">
-      <img loading="lazy" class="post-img" src="blog/images/tank-insulation-cover.jpg" alt="أفضل شركة عزل خزانات المياه بالرياض">
-      <div class="post-info">
-        <span class="post-tag">عزل خزانات المياه</span>
-        <h3>أفضل شركة عزل خزانات المياه بالرياض | دليل شامل ومفصل</h3>
-        <p class="post-excerpt">دليل شامل يغطي أنواع الخزانات، المواد الآمنة المعتمدة صحيًا، وخطوات تنفيذ العزل باحترافية.</p>
-        <div class="post-meta-row">
-          <span>📅 ٢٠٢٦</span>
-          <span>⏱ 10 دقائق</span>
-        </div>
-        <span class="read-more">اقرأ المزيد ←</span>
-      </div>
-    </a>
-    <a href="/blog/best-water-leak-detection-company-riyadh" class="post-card">
-      <img loading="lazy" class="post-img" src="blog/images/water-leak-detection-cover.jpg" alt="أفضل شركة كشف تسريب المياه بالرياض">
-      <div class="post-info">
-        <span class="post-tag">كشف تسريبات المياه</span>
-        <h3>أفضل شركة كشف تسريب المياه بالرياض | دليل شامل ومفصل</h3>
-        <p class="post-excerpt">دليل شامل عن أسباب وعلامات تسربات المياه، والأجهزة الحديثة المستخدمة في الكشف بدون تكسير.</p>
-        <div class="post-meta-row">
-          <span>📅 ٢٠٢٦</span>
-          <span>⏱ 12 دقيقة</span>
-        </div>
-        <span class="read-more">اقرأ المزيد ←</span>
-      </div>
-    </a>
+
   </div>
 
 </div>
@@ -462,30 +400,33 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:40p
 
 <footer>
   <div class="footer-inner">
-<div class="footer-links">
-      <a href="/">الرئيسية</a>
-      <span class="sep">.</span>
-      <a href="/about">من نحن</a>
-      <span class="sep">.</span>
-      <a href="/services">خدماتنا الاحترافية</a>
-      <span class="sep">.</span>
-      <a href="/blog">المدونة</a>
+    <div class="footer-cr-logo">
+      <img src="cr-logo.png" alt="شعار السجل التجاري" onerror="this.style.display='none'">
+    </div>
+    <div class="footer-cr-info">
+      <span>سجل تجاري رقم : 7050798722</span>
+      <span>تسجيل ضريبي رقم : 310042572600003</span>
     </div>
     <div class="footer-links">
-      <a href="/faq">الأسئلة الشائعة</a>
+      <a href="index.html">الرئيسية</a>
       <span class="sep">.</span>
-      <a href="/contact">اتصل بنا</a>
+      <a href="services.html">خدماتنا الاحترافية</a>
+      <span class="sep">.</span>
+      <a href="blog.html">المدونة</a>
+    </div>
+    <div class="footer-links">
+      <a href="faq.html">الأسئلة الشائعة</a>
+      <span class="sep">.</span>
+      <a href="contact.html">اتصل بنا</a>
     </div>
     <div class="footer-bottom">
-      <span>شركة إعمار المنزل للخدمات المنزلية — جميع الحقوق محفوظة</span>
-      <span><a href="/terms" style="color:var(--text-dim);text-decoration:none;">الشروط والأحكام</a> | <a href="/privacy" style="color:var(--text-dim);text-decoration:none;">سياسة الخصوصية</a> | <a href="/refund" style="color:var(--text-dim);text-decoration:none;">الإلغاء والاسترجاع</a></span>
+      <span>شركة حلول وتميز ذكية لخدمات التنظيف — جميع الحقوق محفوظة</span>
+      <span><a href="terms.html" style="color:var(--text-dim);text-decoration:none;">الشروط والأحكام</a> | <a href="privacy.html" style="color:var(--text-dim);text-decoration:none;">سياسة الخصوصية</a></span>
     </div>
-    <div class="credit-line">
-      <span class="credit-badge">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="var(--lime)"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg>
-        تم تنفيذ الموقع بواسطة شــركة <a href="https://wa.me/201213816311" target="_blank" rel="noopener">Click Zodiak</a>
-      </span>
-    </div>
+  </div>
+<div class="cz-credit">
+    <span>تم تنفيذ الموقع بواسطة</span>
+    <a href="https://wa.me/201213816311" target="_blank" rel="noopener" class="cz-credit-link">Click Zodiak</a>
   </div>
 </footer>
 
