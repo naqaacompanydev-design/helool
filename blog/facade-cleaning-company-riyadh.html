@@ -165,6 +165,12 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:40p
   .article-img-grid img{height:200px;}
   .compare-grid{grid-template-columns:1fr;}
 }
+
+/* ── CLICK ZODIAK CREDIT ── */
+.cz-credit{display:flex;align-items:center;justify-content:center;gap:6px;flex-wrap:wrap;text-align:center;font-family:'Cairo',sans-serif;font-size:12px;color:#ffffff;}
+.cz-credit-link{position:relative;font-weight:800;font-size:13px;text-decoration:none;background:linear-gradient(90deg,#c8e01a 0%,#ffffff 50%,#c8e01a 100%);background-size:200% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:czShine 2.8s linear infinite;}
+.cz-credit-link::after{content:'';position:absolute;left:0;right:0;bottom:-3px;height:1px;background:linear-gradient(90deg,transparent,#c8e01a,transparent);opacity:.7;}
+@keyframes czShine{0%{background-position:0% center;}100%{background-position:200% center;}}
 </style>
 </head>
 <body>
@@ -459,6 +465,10 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:40p
     <div class="footer-bottom">
       <span>شركة حلول وتميز ذكية لخدمات التنظيف — جميع الحقوق محفوظة</span>
     </div>
+  </div>
+<div class="cz-credit">
+    <span>تم تنفيذ الموقع بواسطة</span>
+    <a href="https://wa.me/201213816311" target="_blank" rel="noopener" class="cz-credit-link">Click Zodiak</a>
   </div>
 </footer>
 

@@ -117,6 +117,12 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:40p
 .footer-links .sep{color:rgba(255,255,255,.15);font-size:11px;}
 .footer-bottom{font-size:12px;color:var(--text-dim);border-top:1px solid rgba(255,255,255,.04);padding-top:16px;margin-top:16px;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px;}
 @media(max-width:768px){nav{display:none;}.hamburger{display:flex;}}
+
+/* ── CLICK ZODIAK CREDIT ── */
+.cz-credit{display:flex;align-items:center;justify-content:center;gap:6px;flex-wrap:wrap;text-align:center;font-family:'Cairo',sans-serif;font-size:12px;color:#ffffff;}
+.cz-credit-link{position:relative;font-weight:800;font-size:13px;text-decoration:none;background:linear-gradient(90deg,#c8e01a 0%,#ffffff 50%,#c8e01a 100%);background-size:200% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:czShine 2.8s linear infinite;}
+.cz-credit-link::after{content:'';position:absolute;left:0;right:0;bottom:-3px;height:1px;background:linear-gradient(90deg,transparent,#c8e01a,transparent);opacity:.7;}
+@keyframes czShine{0%{background-position:0% center;}100%{background-position:200% center;}}
 </style>
 </head>
 <body>
@@ -164,12 +170,12 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:40p
   <!-- FEATURED -->
   <div class="blog-section-title">أحدث المقالات</div>
 
-  <a href="blog/villa-facade-prices-riyadh.html" class="post-card-featured">
-    <img src="blog/villa-facade-prices-hero.jpg" alt="شركة تنظيف واجهات زجاجية بالرياض بأسعار معقولة - حلول وتميز" class="post-img" loading="lazy">
+  <a href="blog/bird-droppings-manwar-cleaning-riyadh.html" class="post-card-featured">
+    <img src="blog/bird-droppings-cleaning-hero.jpg" alt="شركة تنظيف مخلفات الطيور وتنظيف المناور بالمباني بالرياض - حلول وتميز" class="post-img" loading="lazy">
     <div class="post-info">
-      <span class="post-tag">تنظيف الواجهات</span>
-      <h2>تنظيف واجهات الفلل | اسعار معقولة وليس مبالغ فيها | إدارة سعودية</h2>
-      <p class="post-excerpt">تنظيف واجهات الفلل الزجاجية بأسعار معقولة وشفافة تحت إدارة سعودية موثوقة دون رسوم مخفية.</p>
+      <span class="post-tag">خدمات التنظيف</span>
+      <h2>شركة تنظيف مخلفات الطيور وتنظيف المناور بالمباني | شركة حلول وتميز للتنظيف</h2>
+      <p class="post-excerpt">إزالة مخلفات الطيور وتعقيم المناور الزجاجية بالرياض بمحاليل ومعدات آمنة على الزجاج والأسطح.</p>
       <div class="post-meta-row">
         <span>📅 يوليو 2026</span>
         <span>⏱️ 22 دقيقة قراءة</span>
@@ -181,6 +187,34 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:40p
 
   <!-- POSTS GRID -->
   <div class="posts-grid-wrap" id="postsGrid">
+
+    <a href="blog/government-facade-cleaning-riyadh.html" class="post-card">
+      <img src="blog/government-facade-cleaning-hero.jpg" alt="أفضل شركة تنظيف واجهات المباني والمنشآت الحكومية بالرياض - حلول وتميز" class="post-img" loading="lazy">
+      <div class="post-info">
+        <span class="post-tag">تنظيف الواجهات</span>
+        <h3>افضل شركة تنظيف واجهات المباني والمنشأت الحكومية | شركة حلول وتميز للتنظيف</h3>
+        <p class="post-excerpt">تنظيف واجهات المباني والمنشآت الحكومية بالرياض بأعلى معايير السلامة والاحترافية لدى الوزارات والهيئات الرسمية.</p>
+        <div class="post-meta-row">
+          <span>📅 يوليو 2026</span>
+          <span>⏱️ 24 دقيقة قراءة</span>
+        </div>
+        <span class="read-more">اقرأ المقال ←</span>
+      </div>
+    </a>
+
+    <a href="blog/villa-facade-prices-riyadh.html" class="post-card">
+      <img src="blog/villa-facade-prices-hero.jpg" alt="شركة تنظيف واجهات زجاجية بالرياض بأسعار معقولة - حلول وتميز" class="post-img" loading="lazy">
+      <div class="post-info">
+        <span class="post-tag">تنظيف الواجهات</span>
+        <h3>تنظيف واجهات الفلل | اسعار معقولة وليس مبالغ فيها | إدارة سعودية</h3>
+        <p class="post-excerpt">تنظيف واجهات الفلل الزجاجية بأسعار معقولة وشفافة تحت إدارة سعودية موثوقة دون رسوم مخفية.</p>
+        <div class="post-meta-row">
+          <span>📅 يوليو 2026</span>
+          <span>⏱️ 22 دقيقة قراءة</span>
+        </div>
+        <span class="read-more">اقرأ المقال ←</span>
+      </div>
+    </a>
 
     <a href="blog/stone-facade-cleaning-riyadh.html" class="post-card">
       <img src="blog/stone-facade-cleaning-hero.jpg" alt="شركة تنظيف واجهات حجرية بالرياض - حلول وتميز" class="post-img" loading="lazy">
@@ -389,6 +423,10 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:40p
       <span>شركة حلول وتميز ذكية لخدمات التنظيف — جميع الحقوق محفوظة</span>
       <span><a href="terms.html" style="color:var(--text-dim);text-decoration:none;">الشروط والأحكام</a> | <a href="privacy.html" style="color:var(--text-dim);text-decoration:none;">سياسة الخصوصية</a></span>
     </div>
+  </div>
+<div class="cz-credit">
+    <span>تم تنفيذ الموقع بواسطة</span>
+    <a href="https://wa.me/201213816311" target="_blank" rel="noopener" class="cz-credit-link">Click Zodiak</a>
   </div>
 </footer>
 
