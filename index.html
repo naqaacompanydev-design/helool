@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18245615577"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-18245615577');
-</script>
-
 <meta charset="UTF-8">
 <link rel="icon" type="image/png" href="favicon.png">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,12 +16,13 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="hero-bg.webp" fetchpriority="high">
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
 <style>
 :root{
   --lime:#c8e01a; --lime-dark:#a8bc10;
   --dark:#0e0e0e; --dark2:#161616; --dark3:#1e1e1e; --dark4:#252525;
-  --text:#f0f0f0; --text-muted:#999; --text-dim:#555;
+  --text:#f0f0f0; --text-muted:#999; --text-dim:#7d7d7d;
   --white:#ffffff; --radius:20px; --radius-sm:12px;
   --max-w:1200px;
 }
@@ -379,7 +370,7 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:22p
 <!-- HERO -->
 <section class="hero">
   <div class="hero-bg">
-    <img class="hero-bg-img" src="hero-bg.jpg" alt="شركة حلول وتميز لخدمات التنظيف">
+    <img class="hero-bg-img" src="hero-bg.webp" alt="شركة حلول وتميز لخدمات التنظيف" fetchpriority="high">
     <div class="hero-bg-overlay"></div>
   </div>
   <div class="hero-noise"></div>
@@ -423,7 +414,7 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:22p
 
       <!-- CARD 1 — FEATURED تنظيف واجهات (span 2) -->
       <a href="services/facade-cleaning.html" class="srv-card reveal">
-        <img class="srv-img" src="facade-cleaning.jpg" alt="تنظيف واجهات المباني" loading="lazy">
+        <img class="srv-img" src="facade-cleaning.webp" alt="تنظيف واجهات المباني" loading="lazy">
         <div class="srv-overlay"></div>
         <div class="srv-body">
           <span class="srv-cat">الأكثر طلباً</span>
@@ -435,7 +426,7 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:22p
 
       <!-- CARD 2 — تلميع واجهات -->
       <a href="services/facade-polish.html" class="srv-card reveal">
-        <img class="srv-img" src="facade-polish.jpg" alt="تلميع واجهات المباني" loading="lazy">
+        <img class="srv-img" src="facade-polish.webp" alt="تلميع واجهات المباني" loading="lazy">
         <div class="srv-overlay"></div>
         <div class="srv-body">
           <span class="srv-cat">حماية دائمة</span>
@@ -471,7 +462,7 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:22p
 
       <!-- CARD 5 -->
       <a href="services/tanks.html" class="srv-card reveal">
-        <img class="srv-img" src="tanks-bg.jpg" alt="تنظيف وتعقيم الخزانات" loading="lazy">
+        <img class="srv-img" src="tanks-bg.webp" alt="تنظيف وتعقيم الخزانات" loading="lazy">
         <div class="srv-overlay"></div>
         <div class="srv-body">
           <span class="srv-cat">صحة وسلامة</span>
@@ -483,7 +474,7 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:22p
 
       <!-- CARD 6 -->
       <a href="services/ac.html" class="srv-card reveal">
-        <img class="srv-img" src="ac-bg.jpg" alt="تنظيف المكيفات والستائر" loading="lazy">
+        <img class="srv-img" src="ac-bg.webp" alt="تنظيف المكيفات والستائر" loading="lazy">
         <div class="srv-overlay"></div>
         <div class="srv-body">
           <span class="srv-cat">توفير الطاقة</span>
@@ -566,8 +557,8 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:22p
     </div>
     <div class="ba-slider-wrap reveal">
       <div class="ba-slider" id="baSlider">
-        <img class="ba-img ba-before" src="before-after-1.jpg" alt="قبل تنظيف الواجهة" draggable="false">
-        <img class="ba-img ba-after" src="before-after-2.jpg" alt="بعد تنظيف الواجهة" draggable="false">
+        <img class="ba-img ba-before" src="before-after-1.webp" alt="قبل تنظيف الواجهة" draggable="false">
+        <img class="ba-img ba-after" src="before-after-2.webp" alt="بعد تنظيف الواجهة" draggable="false">
         <span class="ba-tag ba-tag-before">قبل</span>
         <span class="ba-tag ba-tag-after">بعد</span>
         <div class="ba-handle" id="baHandle">
@@ -596,16 +587,16 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:22p
       <div class="contact-form reveal">
         <div class="form-row">
           <div class="field">
-            <label>الاسم الكريم <span>*</span></label>
+            <label for="hfname">الاسم الكريم <span>*</span></label>
             <input type="text" id="hfname" placeholder="اسمك الكريم" required>
           </div>
           <div class="field">
-            <label>رقم الجوال <span>*</span></label>
+            <label for="hfphone">رقم الجوال <span>*</span></label>
             <input type="tel" id="hfphone" placeholder="05XXXXXXXX" required>
           </div>
         </div>
         <div class="field">
-          <label>الخدمة المطلوبة <span>*</span></label>
+          <label for="hfservice">الخدمة المطلوبة <span>*</span></label>
           <select id="hfservice">
             <option value="" disabled>اختر الخدمة</option>
             <option selected>⭐ تنظيف الواجهات (الأكثر طلباً)</option>
@@ -620,11 +611,11 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:22p
           </select>
         </div>
         <div class="field">
-          <label>الحي / المنطقة</label>
+          <label for="hfarea">الحي / المنطقة</label>
           <input type="text" id="hfarea" placeholder="مثال: النرجس، العليا">
         </div>
         <div class="field">
-          <label>تفاصيل إضافية</label>
+          <label for="hfmsg">تفاصيل إضافية</label>
           <textarea id="hfmsg" placeholder="أخبرنا أكثر عن احتياجك — المساحة، عدد الغرف، أي ملاحظات..."></textarea>
         </div>
         <button class="submit-btn" onclick="submitHomeForm()" id="homeSubmitBtn">
@@ -732,6 +723,16 @@ document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
   slider.addEventListener('pointerup', ()=>{ dragging = false; });
   slider.addEventListener('pointerleave', ()=>{ dragging = false; });
 })();
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18245615577"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-18245615577');
 </script>
 </body>
 </html>

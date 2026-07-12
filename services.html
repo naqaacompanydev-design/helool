@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18245615577"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-18245615577');
-</script>
-
 <meta charset="UTF-8">
 <link rel="icon" type="image/png" href="favicon.png">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,7 +16,7 @@
 :root{
   --lime:#c8e01a;--lime-dark:#a8bc10;
   --dark:#0e0e0e;--dark2:#161616;--dark3:#1e1e1e;--dark4:#252525;
-  --text:#f0f0f0;--text-muted:#999;--text-dim:#555;
+  --text:#f0f0f0;--text-muted:#999;--text-dim:#7d7d7d;
   --white:#fff;--radius:20px;--radius-sm:12px;--max-w:1200px;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
@@ -200,7 +190,7 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:40p
 
       <!-- 1 FEATURED — تنظيف الواجهات -->
       <a href="services/facade-cleaning.html" class="srv-card featured reveal" data-cat="facade">
-        <img class="srv-img" src="facade-cleaning.jpg" alt="تنظيف واجهات المباني">
+        <img class="srv-img" src="facade-cleaning.webp" alt="تنظيف واجهات المباني">
         <div class="srv-overlay"></div>
         <div class="srv-body">
           <span class="srv-tag">الأكثر طلباً</span>
@@ -212,7 +202,7 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:40p
 
       <!-- 2 — تلميع الواجهات -->
       <a href="services/facade-polish.html" class="srv-card reveal" data-cat="facade">
-        <img class="srv-img" src="facade-polish.jpg" alt="تلميع الواجهات">
+        <img class="srv-img" src="facade-polish.webp" alt="تلميع الواجهات">
         <div class="srv-overlay"></div>
         <div class="srv-body">
           <span class="srv-tag">حماية دائمة</span>
@@ -248,7 +238,7 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:40p
 
       <!-- 5 — تنظيف الخزانات -->
       <a href="services/tanks.html" class="srv-card reveal" data-cat="specialized">
-        <img class="srv-img" src="tanks-bg.jpg" alt="تنظيف وتعقيم الخزانات">
+        <img class="srv-img" src="tanks-bg.webp" alt="تنظيف وتعقيم الخزانات">
         <div class="srv-overlay"></div>
         <div class="srv-body">
           <span class="srv-tag">صحة وسلامة</span>
@@ -260,7 +250,7 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:40p
 
       <!-- 6 — تنظيف المكيفات -->
       <a href="services/ac.html" class="srv-card reveal" data-cat="home">
-        <img class="srv-img" src="ac-bg.jpg" alt="تنظيف المكيفات والستائر">
+        <img class="srv-img" src="ac-bg.webp" alt="تنظيف المكيفات والستائر">
         <div class="srv-overlay"></div>
         <div class="srv-body">
           <span class="srv-tag">هواء نقي</span>
@@ -375,6 +365,15 @@ const observer = new IntersectionObserver(entries=>{
   entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');});
 },{threshold:0.08});
 document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18245615577"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-18245615577');
 </script>
 </body>
 </html>
