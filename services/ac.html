@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18245615577"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-18245615577');
+</script>
+
 <meta charset="UTF-8">
 <link rel="icon" type="image/png" href="../favicon.png">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -95,6 +105,12 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,0.06);padding:60
 .call-fab:hover{transform:scale(1.1);}
 @media(max-width:768px){nav{display:none;}.cta-btn.desktop-only{display:none;}.hamburger{display:flex;}.service-hero-inner{grid-template-columns:1fr;}.service-visual{display:none;}.two-col{grid-template-columns:1fr;}.footer-top{grid-template-columns:1fr 1fr;}.footer-brand{grid-column:1/-1;}}
 @media(max-width:600px){.footer-top{grid-template-columns:1fr;}.hero-actions{flex-direction:column;}}
+
+/* ── CLICK ZODIAK CREDIT ── */
+.cz-credit{display:flex;align-items:center;justify-content:center;gap:6px;flex-wrap:wrap;text-align:center;font-family:'Cairo',sans-serif;font-size:12px;color:#ffffff;}
+.cz-credit-link{position:relative;font-weight:800;font-size:13px;text-decoration:none;background:linear-gradient(90deg,#c8e01a 0%,#ffffff 50%,#c8e01a 100%);background-size:200% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:czShine 2.8s linear infinite;}
+.cz-credit-link::after{content:'';position:absolute;left:0;right:0;bottom:-3px;height:1px;background:linear-gradient(90deg,transparent,#c8e01a,transparent);opacity:.7;}
+@keyframes czShine{0%{background-position:0% center;}100%{background-position:200% center;}}
 </style>
 </head>
 <body>
@@ -205,6 +221,10 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,0.06);padding:60
       <span>شركة حلول وتميز ذكية لخدمات التنظيف — جميع الحقوق محفوظة</span>
       <span><a href="../terms.html" style="color:var(--text-dim);text-decoration:none;">الشروط والأحكام</a> | <a href="../privacy.html" style="color:var(--text-dim);text-decoration:none;">سياسة الخصوصية</a></span>
     </div>
+  </div>
+<div class="cz-credit">
+    <span>تم تنفيذ الموقع بواسطة</span>
+    <a href="https://wa.me/201213816311" target="_blank" rel="noopener" class="cz-credit-link">Click Zodiak</a>
   </div>
 </footer>
 <script>
