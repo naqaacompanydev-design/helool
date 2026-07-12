@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18245615577"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-18245615577');
+</script>
+
 <meta charset="UTF-8">
 <link rel="icon" type="image/png" href="favicon.png">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,7 +35,7 @@
 }
 </script>
 <style>
-:root{--lime:#c8e01a;--lime-dark:#a8bc10;--dark:#0e0e0e;--dark2:#161616;--dark3:#1e1e1e;--dark4:#252525;--text:#f0f0f0;--text-muted:#999;--text-dim:#7d7d7d;--white:#ffffff;--radius:16px;--radius-sm:10px;}
+:root{--lime:#c8e01a;--lime-dark:#a8bc10;--dark:#0e0e0e;--dark2:#161616;--dark3:#1e1e1e;--dark4:#252525;--text:#f0f0f0;--text-muted:#999;--text-dim:#666;--white:#ffffff;--radius:16px;--radius-sm:10px;}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 html{scroll-behavior:smooth;}
 body{font-family:'Cairo',sans-serif;background:var(--dark);color:var(--text);direction:rtl;line-height:1.7;overflow-x:hidden;}
@@ -229,16 +239,16 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:40p
     <div class="contact-form">
       <div class="form-row">
         <div class="field">
-          <label for="fname">الاسم الكريم <span>*</span></label>
+          <label>الاسم الكريم <span>*</span></label>
           <input type="text" id="fname" placeholder="اسمك الكريم" required>
         </div>
         <div class="field">
-          <label for="fphone">رقم الجوال <span>*</span></label>
+          <label>رقم الجوال <span>*</span></label>
           <input type="tel" id="fphone" placeholder="05XXXXXXXX" required>
         </div>
       </div>
       <div class="field">
-        <label for="fservice">الخدمة المطلوبة <span>*</span></label>
+        <label>الخدمة المطلوبة <span>*</span></label>
         <select id="fservice">
           <option value="" disabled selected>اختر الخدمة</option>
           <option>التنظيف العميق (منازل / فلل)</option>
@@ -253,11 +263,11 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:40p
       </div>
       <div class="form-row">
         <div class="field">
-          <label for="farea">الحي / المنطقة</label>
+          <label>الحي / المنطقة</label>
           <input type="text" id="farea" placeholder="مثال: النرجس، العليا">
         </div>
         <div class="field">
-          <label for="ftime">الوقت المفضل للتواصل</label>
+          <label>الوقت المفضل للتواصل</label>
           <select id="ftime">
             <option value="" disabled selected>اختر</option>
             <option>صباحاً (٨ص – ١٢م)</option>
@@ -268,7 +278,7 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:40p
         </div>
       </div>
       <div class="field">
-        <label for="fmsg">تفاصيل إضافية</label>
+        <label>تفاصيل إضافية</label>
         <textarea id="fmsg" placeholder="أخبرنا أكثر عن احتياجك — المساحة، عدد الغرف، أي ملاحظات..."></textarea>
       </div>
       <button class="submit-btn" onclick="submitForm()" id="submitBtn">
@@ -336,15 +346,6 @@ function submitForm(){
     setTimeout(()=>{window.open(`https://wa.me/966559817516?text=${waMsg}`,'_blank');},1500);
   },1000);
 }
-</script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18245615577"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-18245615577');
 </script>
 </body>
 </html>
