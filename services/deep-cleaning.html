@@ -35,7 +35,7 @@
 <style>
 :root{--lime:#c8e01a;--lime-dark:#a8bc10;--red:#ff2e0a;--purple:#780165;--dark:#0e0e0e;--dark2:#161616;--dark3:#1e1e1e;--dark4:#252525;--text:#f0f0f0;--text-muted:#999;--text-dim:#666;--white:#ffffff;--radius:16px;}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-html{scroll-behavior:smooth;}
+html{scroll-behavior:smooth;overflow-x:hidden;}
 body{font-family:'Cairo',sans-serif;background:var(--dark);color:var(--text);direction:rtl;line-height:1.7;overflow-x:hidden;}
 a{text-decoration:none;color:inherit;}
 
@@ -59,8 +59,9 @@ nav a:hover::after{width:100%;}
 /* SERVICE HERO */
 .service-hero{padding:130px 5% 80px;position:relative;overflow:hidden;background:var(--dark2);}
 .service-hero::before{content:'';position:absolute;top:-30%;right:-10%;width:600px;height:600px;background:radial-gradient(circle,rgba(200,224,26,0.07) 0%,transparent 65%);pointer-events:none;}
-.service-hero-inner{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;}
-.breadcrumb{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-dim);margin-bottom:20px;}
+.service-hero-inner{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;min-width:0;}
+.service-hero-inner>div{min-width:0;}
+.breadcrumb{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:13px;color:var(--text-dim);margin-bottom:20px;}
 .breadcrumb a:hover{color:var(--lime);}
 .section-label{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:0.15em;color:var(--lime);text-transform:uppercase;margin-bottom:16px;}
 .section-label::before{content:'';width:24px;height:2px;background:var(--lime);}
@@ -84,7 +85,8 @@ nav a:hover::after{width:100%;}
 /* WHAT IS */
 .content-section{padding:80px 5%;}
 .content-section.alt{background:var(--dark3);}
-.two-col{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;min-width:0;}
+.two-col>div{min-width:0;}
 .content-section h2{font-size:clamp(26px,3.5vw,38px);font-weight:800;line-height:1.25;margin-bottom:20px;}
 .content-section p{font-size:15px;color:var(--text-muted);line-height:1.9;margin-bottom:16px;}
 
