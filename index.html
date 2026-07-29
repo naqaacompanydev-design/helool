@@ -115,6 +115,22 @@ nav a:hover{color:var(--white);}nav a:hover::after{width:100%;}
 .ba-tag-after{right:18px;color:var(--dark);background:var(--lime);border-color:var(--lime);}
 .ba-hint{text-align:center;font-size:13px;color:var(--text-dim);margin-top:20px;display:flex;align-items:center;justify-content:center;gap:8px;}
 
+/* PROJECTS PREVIEW SLIDER */
+.projects-preview-section{background:var(--dark);padding:20px 0;}
+.projects-scroller{display:flex;gap:18px;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x proximity;padding:6px 24px 20px;margin:0 -24px;cursor:grab;-webkit-overflow-scrolling:touch;scrollbar-width:none;-ms-overflow-style:none;user-select:none;}
+.projects-scroller::-webkit-scrollbar{display:none;}
+.projects-scroller.dragging{cursor:grabbing;scroll-snap-type:none;}
+.pp-card{flex:0 0 auto;width:280px;scroll-snap-align:start;background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:16px;overflow:hidden;transition:border-color .3s,transform .3s;}
+.pp-card:hover{border-color:rgba(200,224,26,.25);transform:translateY(-3px);}
+.pp-card-img{aspect-ratio:4/3;overflow:hidden;background:var(--dark3);}
+.pp-card-img img{width:100%;height:100%;object-fit:cover;pointer-events:none;}
+.pp-card-body{padding:16px 18px 18px;}
+.pp-tag{display:inline-block;font-size:10.5px;font-weight:700;color:var(--lime);background:rgba(200,224,26,.08);border:1px solid rgba(200,224,26,.2);padding:3px 10px;border-radius:20px;margin-bottom:10px;}
+.pp-card-body h3{font-size:15.5px;font-weight:800;color:var(--white);line-height:1.5;}
+.pp-more-card{flex:0 0 auto;width:200px;scroll-snap-align:start;display:flex;align-items:center;justify-content:center;}
+.pp-more-card a{display:flex;flex-direction:column;align-items:center;gap:10px;color:var(--lime);font-size:14px;font-weight:700;text-align:center;padding:20px;border:1.5px dashed rgba(200,224,26,.35);border-radius:16px;width:100%;height:100%;justify-content:center;transition:background .2s,border-color .2s;}
+.pp-more-card a:hover{background:rgba(200,224,26,.06);border-color:rgba(200,224,26,.6);}
+
 /* ── HOME CONTACT FORM ── */
 .form-section{padding-bottom:0;}
 .form-narrow{max-width:640px;margin:0 auto;}
@@ -306,6 +322,9 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:22p
 }
 @media(max-width:640px){
   .ba-section{padding:14px 0;}
+  .projects-preview-section{padding:14px 0;}
+  .pp-card{width:220px;}
+  .pp-more-card{width:160px;}
   .ba-tag{font-size:10px;padding:5px 12px;}
   .ba-handle-knob{width:44px;height:44px;}
   .section{padding:16px 0;}
@@ -586,6 +605,83 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.05);padding:22p
   </div>
 </section>
 
+<!-- PROJECTS PREVIEW -->
+<section class="section projects-preview-section">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-label">مشاريعنا</div>
+      <h2 class="section-title">نماذج من أعمالنا الفعلية</h2>
+      <p class="section-sub">مجموعة من المشاريع التي نفذتها فرقنا في مواقع مختلفة — اسحب لتصفح المزيد.</p>
+    </div>
+    <div class="projects-scroller reveal" id="projectsScroller">
+
+      <a href="projects.html" class="pp-card">
+        <div class="pp-card-img"><img src="alhilal-club-facade-cleaning-1.jpg" alt="تنظيف مقر نادي الهلال بالرياض" loading="lazy"></div>
+        <div class="pp-card-body">
+          <span class="pp-tag">واجهات ومنشآت رياضية</span>
+          <h3>تنظيف مقر نادي الهلال</h3>
+        </div>
+      </a>
+
+      <a href="projects.html" class="pp-card">
+        <div class="pp-card-img"><img src="aljouf-airport-glass-cladding-cleaning-1.jpg" alt="تنظيف مطار الجوف الدولي" loading="lazy"></div>
+        <div class="pp-card-body">
+          <span class="pp-tag">زجاجيات وكلادينج</span>
+          <h3>تنظيف مطار الجوف الدولي</h3>
+        </div>
+      </a>
+
+      <a href="projects.html" class="pp-card">
+        <div class="pp-card-img"><img src="wow-hotel-yusr-building-facade-cleaning-1.jpg" alt="تنظيف واجهات فندق واو ومبنى اليسر" loading="lazy"></div>
+        <div class="pp-card-body">
+          <span class="pp-tag">فنادق ومبانٍ تجارية</span>
+          <h3>فندق واو ومبنى اليسر</h3>
+        </div>
+      </a>
+
+      <a href="projects.html" class="pp-card">
+        <div class="pp-card-img"><img src="qiddiya-project-facade-cleaning-1.jpg" alt="تنظيف مشروع القدية بالرياض" loading="lazy"></div>
+        <div class="pp-card-body">
+          <span class="pp-tag">واجهات وأرضيات وتنظيف عميق</span>
+          <h3>مشروع القدية</h3>
+        </div>
+      </a>
+
+      <a href="projects.html" class="pp-card">
+        <div class="pp-card-img"><img src="medina-gate-mall-cleaning-1.jpg" alt="تنظيف مول بوابة المدينة" loading="lazy"></div>
+        <div class="pp-card-body">
+          <span class="pp-tag">واجهات وأرضيات وتنظيف عميق</span>
+          <h3>مول بوابة المدينة</h3>
+        </div>
+      </a>
+
+      <a href="projects.html" class="pp-card">
+        <div class="pp-card-img"><img src="riyadh-villas-facade-cleaning-project-1.jpg" alt="تنظيف واجهات أكثر من 200 فيلا بالرياض" loading="lazy"></div>
+        <div class="pp-card-body">
+          <span class="pp-tag">واجهات وتشطيب نهائي فلل</span>
+          <h3>+200 فيلا بالرياض</h3>
+        </div>
+      </a>
+
+      <a href="projects.html" class="pp-card">
+        <div class="pp-card-img"><img src="financial-district-riyadh-facade-cleaning-1.jpg" alt="تنظيف واجهات مباني المركز المالي بالرياض" loading="lazy"></div>
+        <div class="pp-card-body">
+          <span class="pp-tag">واجهات مبانٍ تجارية</span>
+          <h3>المركز المالي بالرياض</h3>
+        </div>
+      </a>
+
+      <div class="pp-more-card">
+        <a href="projects.html">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          شاهد كل المشاريع
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- FORM -->
 <section class="section form-section" id="homeForm">
   <div class="section-inner">
@@ -735,6 +831,28 @@ document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
   slider.addEventListener('pointermove', e=>{ if(dragging) setPos(e.clientX); });
   slider.addEventListener('pointerup', ()=>{ dragging = false; });
   slider.addEventListener('pointerleave', ()=>{ dragging = false; });
+})();
+
+// Projects preview drag-to-scroll (mouse; touch works natively)
+(function(){
+  const el = document.getElementById('projectsScroller');
+  if(!el) return;
+  let isDown = false, startX, scrollLeft, moved;
+  el.addEventListener('mousedown', e=>{
+    isDown = true; moved = false;
+    el.classList.add('dragging');
+    startX = e.pageX; scrollLeft = el.scrollLeft;
+  });
+  window.addEventListener('mouseup', ()=>{ isDown = false; el.classList.remove('dragging'); });
+  el.addEventListener('mouseleave', ()=>{ isDown = false; el.classList.remove('dragging'); });
+  el.addEventListener('mousemove', e=>{
+    if(!isDown) return;
+    e.preventDefault();
+    const dx = e.pageX - startX;
+    if(Math.abs(dx) > 5) moved = true;
+    el.scrollLeft = scrollLeft - dx;
+  });
+  el.addEventListener('click', e=>{ if(moved){ e.preventDefault(); e.stopPropagation(); } }, true);
 })();
 </script>
 </body>
